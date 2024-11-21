@@ -42,16 +42,6 @@ func searchNode(node *Node, target int) bool {
 	}
 }
 
-// MapSliceToTree converts a slice of integers into a Binary Search Tree
-func MapSliceToTree(slice []int) *BinarySearchTree {
-	bst := &BinarySearchTree{}
-	for _, value := range slice {
-		bst.Insert(value)
-	}
-
-	return bst
-}
-
 // Insert adds a new value into the Binary Search Tree
 func (bst *BinarySearchTree) Insert(value int) {
 	bst.Root = insertNode(bst.Root, value)
@@ -72,4 +62,14 @@ func insertNode(node *Node, value int) *Node {
 	}
 
 	return node // Return the current node
+}
+
+// MapSliceToTree converts a slice of integers into a Binary Search Tree
+func MapSliceToTree(slice []int) *BinarySearchTree {
+	bst := &BinarySearchTree{}
+	for _, value := range slice {
+		bst.Insert(value)
+	}
+
+	return bst
 }

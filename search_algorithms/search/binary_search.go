@@ -15,7 +15,7 @@ func (BinarySearcher) Search(data any, target int) bool {
 
 	for start <= end {
 		// Find the middle index
-		middle := (start + end) / 2
+		middle := start + (end-start)/2
 
 		// If target is found at a middle, return true
 		if slice[middle] == target {

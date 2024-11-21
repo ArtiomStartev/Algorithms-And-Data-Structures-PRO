@@ -66,19 +66,19 @@ func (sll *SinglyLinkedList[T]) InsertAfter(node *SLLNode[T], value T) *SLLNode[
 
 // Find searches for a node with the given value in the linked list
 // It returns the node and the previous node if the value is found, otherwise an error
-func (sll *SinglyLinkedList[T]) Find(value T) (*FindSLLNodeResult[T], error) {
+func (sll *SinglyLinkedList[T]) Find(value T) (FindSLLNodeResult[T], error) {
 	current := sll.Head
 	var prev *SLLNode[T]
 
 	for current != nil {
 		if current.Value == value {
-			return &FindSLLNodeResult[T]{Node: current, Prev: prev}, nil
+			return FindSLLNodeResult[T]{Node: current, Prev: prev}, nil
 		}
 		prev = current
 		current = current.Next
 	}
 
-	return nil, fmt.Errorf("value %v not found in linked list", value)
+	return FindSLLNodeResult[T]{}, fmt.Errorf("value %v not found in linked list", value)
 }
 
 // Remove removes the node with the given value from the linked list

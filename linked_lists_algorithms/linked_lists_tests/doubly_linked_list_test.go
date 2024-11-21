@@ -49,7 +49,7 @@ func TestDoublyLinkedList(t *testing.T) {
 
 	// Test Find
 	findResult, err := list.Find(15)
-	if err != nil || findResult != node3 || findResult.Prev != node5 || findResult.Next != node2 {
+	if err != nil || findResult != *node3 || findResult.Prev != node5 || findResult.Next != node2 {
 		t.Errorf("Find failed: expected to find node with value 15")
 	}
 

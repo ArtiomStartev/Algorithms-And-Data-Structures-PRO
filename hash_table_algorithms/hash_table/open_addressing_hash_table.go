@@ -70,6 +70,11 @@ func (ht *OpenAddressingHashTable) Remove(key string) error {
 		}
 
 		index = (index + 1) % ht.Capacity
+
+		// if we have traversed the whole hash table and still not found the key
+		if index == ht.HashFunc(key)%ht.Capacity {
+			break
+		}
 	}
 
 	return errors.New("key not found")

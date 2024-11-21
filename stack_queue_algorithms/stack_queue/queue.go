@@ -2,6 +2,14 @@ package stack_queue
 
 import "errors"
 
+// Queue is an interface that both ArrayQueue and LinkedListQueue should implement
+type Queue[T any] interface {
+	IsEmpty() bool
+	Enqueue(value T)
+	GetFrontElement() (*T, error)
+	Dequeue() error
+}
+
 // ----------------------- Dynamic Array Queue -----------------------
 
 // ArrayQueue is a queue implemented using a dynamic array.
@@ -37,6 +45,7 @@ func (q *ArrayQueue[T]) Dequeue() error {
 	if q.IsEmpty() {
 		return errors.New("queue is empty")
 	}
+	q.data[0] = *new(T) // Clear reference to allow GC to free memory
 	q.data = q.data[1:]
 	return nil
 }

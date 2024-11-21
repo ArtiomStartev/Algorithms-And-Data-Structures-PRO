@@ -4,6 +4,14 @@ import (
 	"errors"
 )
 
+// Stack is an interface that both ArrayStack and LinkedListStack should implement
+type Stack[T any] interface {
+	IsEmpty() bool
+	Push(value T)
+	GetLatestElement() (*T, error)
+	Pop() error
+}
+
 // ----------------------- Dynamic Array Stack -----------------------
 
 // ArrayStack is a stack implemented using a dynamic array.

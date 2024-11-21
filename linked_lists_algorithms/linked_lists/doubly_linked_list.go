@@ -95,17 +95,17 @@ func (dll *DoublyLinkedList[T]) InsertAfter(node *DLLNode[T], value T) *DLLNode[
 
 // Find searches for a node with the given value in the linked list
 // It returns the node if found, otherwise an error
-func (dll *DoublyLinkedList[T]) Find(value T) (*DLLNode[T], error) {
+func (dll *DoublyLinkedList[T]) Find(value T) (DLLNode[T], error) {
 	current := dll.Head
 
 	for current != nil {
 		if current.Value == value {
-			return current, nil
+			return *current, nil
 		}
 		current = current.Next
 	}
 
-	return nil, fmt.Errorf("value %v not found in the linked list", value)
+	return DLLNode[T]{}, fmt.Errorf("value %v not found in the linked list", value)
 }
 
 // Remove removes the given node from the linked list

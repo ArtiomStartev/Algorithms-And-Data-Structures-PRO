@@ -18,6 +18,10 @@ func (ExponentialSearcher) Search(data any, target int) bool {
 	// Find the range for binary search by repeated doubling
 	i := 1
 	for i < len(slice) && slice[i] <= target {
+		if i >= len(slice)/2 { // Check for possible overflow
+			i = len(slice)
+			break
+		}
 		i *= 2
 	}
 
@@ -28,7 +32,7 @@ func (ExponentialSearcher) Search(data any, target int) bool {
 // recursiveBinarySearch is a helper function that performs binary search recursively
 func recursiveBinarySearch(slice []int, target, start, end int) bool {
 	// Find the middle index
-	middle := (start + end) / 2
+	middle := start + (end-start)/2
 
 	// If target is found at a middle, return true
 	if slice[middle] == target {
