@@ -9,8 +9,15 @@ func TestOpenAddressingHashTable(t *testing.T) {
 	hashTable := hash_table.NewOpenAddressingHashTable(10, hash_table.HashString)
 
 	// Test Add
-	hashTable.Add("key1", "value1")
-	hashTable.Add("key2", "value2")
+	err := hashTable.Add("key1", "value1")
+	if err != nil {
+		t.Errorf("Expected no error when adding key 'key1', got error: %v", err)
+	}
+
+	err = hashTable.Add("key2", "value2")
+	if err != nil {
+		t.Errorf("Expected no error when adding key 'key2', got error: %v", err)
+	}
 
 	// Test Get
 	value, err := hashTable.Get("key1")

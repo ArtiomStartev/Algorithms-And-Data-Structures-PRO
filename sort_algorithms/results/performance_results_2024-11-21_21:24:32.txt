@@ -1,0 +1,72 @@
+Algorithm: sort.QuickSorter | Slice Size: 1000 | Order: Ascending | Avg Comparisons: 485217 | Avg Swaps: 486201 | Avg Time: 1049688 ns
+Iteration: 1 | Comparisons: 482653 | Swaps: 483635 | Time: 1245732 ns
+Iteration: 2 | Comparisons: 487578 | Swaps: 488565 | Time: 987492 ns
+Iteration: 3 | Comparisons: 484620 | Swaps: 485604 | Time: 1032733 ns
+Iteration: 4 | Comparisons: 480690 | Swaps: 481670 | Time: 986631 ns
+Iteration: 5 | Comparisons: 490545 | Swaps: 491535 | Time: 995853 ns
+Algorithm: sort.QuickSorter | Slice Size: 1000 | Order: Descending | Avg Comparisons: 486992 | Avg Swaps: 244235 | Avg Time: 1031707 ns
+Iteration: 1 | Comparisons: 481671 | Swaps: 241571 | Time: 998121 ns
+Iteration: 2 | Comparisons: 489555 | Swaps: 245519 | Time: 1013093 ns
+Iteration: 3 | Comparisons: 487578 | Swaps: 244529 | Time: 1009244 ns
+Iteration: 4 | Comparisons: 484620 | Swaps: 243048 | Time: 1076299 ns
+Iteration: 5 | Comparisons: 491536 | Swaps: 246511 | Time: 1061778 ns
+Algorithm: sort.QuickSorter | Slice Size: 1000 | Order: Random | Avg Comparisons: 10877 | Avg Swaps: 6179 | Avg Time: 64005 ns
+Iteration: 1 | Comparisons: 10858 | Swaps: 6552 | Time: 65427 ns
+Iteration: 2 | Comparisons: 12065 | Swaps: 6080 | Time: 65632 ns
+Iteration: 3 | Comparisons: 9753 | Swaps: 5909 | Time: 62391 ns
+Iteration: 4 | Comparisons: 11492 | Swaps: 7058 | Time: 64188 ns
+Iteration: 5 | Comparisons: 10220 | Swaps: 5296 | Time: 62391 ns
+Algorithm: sort.QuickSorter | Slice Size: 10000 | Order: Ascending | Avg Comparisons: 37048114 | Avg Swaps: 37056722 | Avg Time: 75498710 ns
+Iteration: 1 | Comparisons: 37113420 | Swaps: 37122035 | Time: 76932487 ns
+Iteration: 2 | Comparisons: 36992901 | Swaps: 37001502 | Time: 74733608 ns
+Iteration: 3 | Comparisons: 37001503 | Swaps: 37010105 | Time: 75952574 ns
+Iteration: 4 | Comparisons: 37285930 | Swaps: 37294565 | Time: 75369929 ns
+Iteration: 5 | Comparisons: 36846820 | Swaps: 36855404 | Time: 74504956 ns
+Algorithm: sort.QuickSorter | Slice Size: 10000 | Order: Descending | Avg Comparisons: 37098505 | Avg Swaps: 18555712 | Avg Time: 78098999 ns
+Iteration: 1 | Comparisons: 36735306 | Swaps: 18374081 | Time: 76076810 ns
+Iteration: 2 | Comparisons: 37588785 | Swaps: 18800895 | Time: 78954683 ns
+Iteration: 3 | Comparisons: 36949906 | Swaps: 18481400 | Time: 79769503 ns
+Iteration: 4 | Comparisons: 36958503 | Swaps: 18485699 | Time: 78020050 ns
+Iteration: 5 | Comparisons: 37260028 | Swaps: 18636488 | Time: 77673949 ns
+Algorithm: sort.QuickSorter | Slice Size: 10000 | Order: Random | Avg Comparisons: 131086 | Avg Swaps: 72542 | Avg Time: 701705 ns
+Iteration: 1 | Comparisons: 129657 | Swaps: 71910 | Time: 696526 ns
+Iteration: 2 | Comparisons: 140059 | Swaps: 77375 | Time: 708272 ns
+Iteration: 3 | Comparisons: 124388 | Swaps: 66916 | Time: 704545 ns
+Iteration: 4 | Comparisons: 121904 | Swaps: 67936 | Time: 681674 ns
+Iteration: 5 | Comparisons: 139425 | Swaps: 78573 | Time: 717510 ns
+Algorithm: sort.QuickSorter | Slice Size: 50000 | Order: Ascending | Avg Comparisons: 327831877 | Avg Swaps: 327857482 | Avg Time: 672730121 ns
+Iteration: 1 | Comparisons: 328845835 | Swaps: 328871480 | Time: 671680282 ns
+Iteration: 2 | Comparisons: 327488028 | Swaps: 327513620 | Time: 677856530 ns
+Iteration: 3 | Comparisons: 328948425 | Swaps: 328974074 | Time: 676960562 ns
+Iteration: 4 | Comparisons: 326107491 | Swaps: 326133029 | Time: 665292592 ns
+Iteration: 5 | Comparisons: 327769606 | Swaps: 327795209 | Time: 671860640 ns
+Algorithm: sort.QuickSorter | Slice Size: 50000 | Order: Descending | Avg Comparisons: 328488221 | Avg Swaps: 164263333 | Avg Time: 693520614 ns
+Iteration: 1 | Comparisons: 326209653 | Swaps: 163123983 | Time: 694440139 ns
+Iteration: 2 | Comparisons: 329564301 | Swaps: 164801405 | Time: 684989005 ns
+Iteration: 3 | Comparisons: 328794546 | Swaps: 164416505 | Time: 685008648 ns
+Iteration: 4 | Comparisons: 327974466 | Swaps: 164006441 | Time: 718285928 ns
+Iteration: 5 | Comparisons: 329898141 | Swaps: 164968335 | Time: 684879354 ns
+Algorithm: sort.QuickSorter | Slice Size: 50000 | Order: Random | Avg Comparisons: 438367 | Avg Swaps: 238699 | Avg Time: 2321235 ns
+Iteration: 1 | Comparisons: 433354 | Swaps: 234634 | Time: 2290800 ns
+Iteration: 2 | Comparisons: 462266 | Swaps: 257816 | Time: 2399092 ns
+Iteration: 3 | Comparisons: 437189 | Swaps: 241721 | Time: 2300321 ns
+Iteration: 4 | Comparisons: 436887 | Swaps: 237319 | Time: 2302436 ns
+Iteration: 5 | Comparisons: 422139 | Swaps: 222009 | Time: 2313530 ns
+Algorithm: sort.QuickSorter | Slice Size: 1000000 | Order: Ascending | Avg Comparisons: 536821761 | Avg Swaps: 536854527 | Avg Time: 1105156822 ns
+Iteration: 1 | Comparisons: 536821761 | Swaps: 536854527 | Time: 1112162453 ns
+Iteration: 2 | Comparisons: 536821761 | Swaps: 536854527 | Time: 1101762078 ns
+Iteration: 3 | Comparisons: 536821761 | Swaps: 536854527 | Time: 1107858121 ns
+Iteration: 4 | Comparisons: 536821761 | Swaps: 536854527 | Time: 1106623497 ns
+Iteration: 5 | Comparisons: 536821761 | Swaps: 536854527 | Time: 1097377963 ns
+Algorithm: sort.QuickSorter | Slice Size: 1000000 | Order: Descending | Avg Comparisons: 536821761 | Avg Swaps: 268435455 | Avg Time: 1129471147 ns
+Iteration: 1 | Comparisons: 536821761 | Swaps: 268435455 | Time: 1142073051 ns
+Iteration: 2 | Comparisons: 536821761 | Swaps: 268435455 | Time: 1120451416 ns
+Iteration: 3 | Comparisons: 536821761 | Swaps: 268435455 | Time: 1137041266 ns
+Iteration: 4 | Comparisons: 536821761 | Swaps: 268435455 | Time: 1125653623 ns
+Iteration: 5 | Comparisons: 536821761 | Swaps: 268435455 | Time: 1122136379 ns
+Algorithm: sort.QuickSorter | Slice Size: 1000000 | Order: Random | Avg Comparisons: 600066 | Avg Swaps: 316428 | Avg Time: 3065277 ns
+Iteration: 1 | Comparisons: 577704 | Swaps: 293237 | Time: 3030785 ns
+Iteration: 2 | Comparisons: 641431 | Swaps: 318111 | Time: 3103807 ns
+Iteration: 3 | Comparisons: 589470 | Swaps: 313255 | Time: 3072764 ns
+Iteration: 4 | Comparisons: 589388 | Swaps: 340253 | Time: 3110805 ns
+Iteration: 5 | Comparisons: 602337 | Swaps: 317285 | Time: 3008224 ns

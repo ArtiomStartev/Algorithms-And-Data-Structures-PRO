@@ -30,18 +30,29 @@ func NewOpenAddressingHashTable(capacity int, hashFunc HashFunc) *OpenAddressing
 }
 
 // Add adds a new key-value pair to the hash table
-func (ht *OpenAddressingHashTable) Add(key string, value any) {
+func (ht *OpenAddressingHashTable) Add(key string, value any) error {
 	index := ht.HashFunc(key) % ht.Capacity
+	originalIndex := index
 
-	for ht.Buckets[index].Occupied {
+	for {
+		if !ht.Buckets[index].Occupied {
+			ht.Buckets[index] = OpenAddressingHashBucket{
+				Occupied: true,
+				Key:      key,
+				Value:    value,
+			}
+			return nil
+		}
+
 		index = (index + 1) % ht.Capacity
+
+		// If we've looped back to the original index, the hash table is full
+		if index == originalIndex {
+			break
+		}
 	}
 
-	ht.Buckets[index] = OpenAddressingHashBucket{
-		Occupied: true,
-		Key:      key,
-		Value:    value,
-	}
+	return errors.New("hash table is full")
 }
 
 // Get retrieves the value associated with the given key from the hash table
@@ -62,17 +73,18 @@ func (ht *OpenAddressingHashTable) Get(key string) (any, error) {
 // Remove removes the key-value pair associated with the given key from the hash table
 func (ht *OpenAddressingHashTable) Remove(key string) error {
 	index := ht.HashFunc(key) % ht.Capacity
+	originalIndex := index
 
-	for ht.Buckets[index].Occupied {
-		if ht.Buckets[index].Key == key {
+	for {
+		if ht.Buckets[index].Occupied && ht.Buckets[index].Key == key {
 			ht.Buckets[index] = OpenAddressingHashBucket{}
 			return nil
 		}
 
 		index = (index + 1) % ht.Capacity
 
-		// if we have traversed the whole hash table and still not found the key
-		if index == ht.HashFunc(key)%ht.Capacity {
+		// If we've looped back to the original index, the key is not in the hash table
+		if index == originalIndex {
 			break
 		}
 	}
