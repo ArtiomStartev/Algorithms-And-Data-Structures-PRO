@@ -45,33 +45,37 @@ func (ms MergeSorter) mergeSort(slice []int, comparisons, swaps *int) []int {
 func (ms MergeSorter) merge(left, right []int, comparisons, swaps *int) []int {
 	// Create a new slice to store the sorted elements
 	sorted := make([]int, 0, len(left)+len(right))
+	var i int // Index for the sorted slice
 
 	// Compare the first elements of the two slices and add the smaller one to the sorted slice
-	for len(left) > 0 || len(right) > 0 {
-		// If the left slice is empty, add the remaining elements of the right slice to the sorted slice
-		if len(left) == 0 {
-			*swaps += len(right) // Count appending as swaps
-			return append(sorted, right...)
-		}
-
-		// If the right slice is empty, add the remaining elements of the left slice to the sorted slice
-		if len(right) == 0 {
-			*swaps += len(left) // Count appending as swaps
-			return append(sorted, left...)
-		}
-
+	for len(left) > 0 && len(right) > 0 {
 		*comparisons++ // Increment the comparison counter
 
 		// Compare the first elements of the two slices
 		if left[0] <= right[0] {
-			*swaps++ // Increment the swap counter
-			sorted = append(sorted, left[0])
+			sorted[i] = left[0]
 			left = left[1:]
 		} else {
-			*swaps++ // Increment the swap counter
-			sorted = append(sorted, right[0])
+			sorted[i] = right[0]
 			right = right[1:]
 		}
+
+		*swaps++ // Increment the swap counter
+		i++      // Increment the index of the sorted slice
+	}
+
+	// Add any remaining elements from the left slice
+	for _, val := range left {
+		sorted[i] = val
+		i++
+		*swaps++
+	}
+
+	// Add any remaining elements from the right slice
+	for _, val := range right {
+		sorted[i] = val
+		i++
+		*swaps++
 	}
 
 	return sorted // Return the sorted slice
