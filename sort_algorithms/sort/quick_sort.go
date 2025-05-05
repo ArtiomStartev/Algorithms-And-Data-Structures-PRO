@@ -2,65 +2,52 @@ package sort
 
 import "time"
 
-// QuickSorter is a type that implements the Sorter interface for the quick sort algorithm.
 type QuickSorter struct{}
 
-// Sort sorts the slice using the quick sort algorithm.
-func (qs QuickSorter) Sort(slice []int) SortResult {
-	// Record the start time of the sorting process
+// Sort performs a quick sort on the given array of integers
+func (qs QuickSorter) Sort(arr []int) SortResult {
 	startTime := time.Now()
-
-	// Initialize the comparison and swap counters
 	var comparisons, swaps int
 
-	// Perform the quick sort algorithm
-	qs.quickSort(slice, &comparisons, &swaps)
+	qs.quickSort(arr, &comparisons, &swaps)
 
-	// Return the sorted slice and the counters
 	return SortResult{
-		Slice:         slice,
+		Arr:           arr,
 		Comparisons:   comparisons,
 		Swaps:         swaps,
 		ExecutionTime: time.Since(startTime),
 	}
 }
 
-// quickSort sorts the slice using the quick sort algorithm.
-func (qs QuickSorter) quickSort(slice []int, comparisons, swaps *int) {
-	// If the slice has 0 or 1 element, it is already sorted
-	if len(slice) <= 1 {
+// quickSort recursively sorts the array using the quick sort algorithm
+func (qs QuickSorter) quickSort(arr []int, comparisons, swaps *int) {
+	if len(arr) <= 1 {
 		return
 	}
 
-	// Partition the slice and get the pivot index
-	pivotIndex := qs.partition(slice, comparisons, swaps)
+	pivotIndex := qs.partition(arr, comparisons, swaps)
 
-	// Recursively sort elements before and after the pivot
-	qs.quickSort(slice[:pivotIndex], comparisons, swaps)
-	qs.quickSort(slice[pivotIndex+1:], comparisons, swaps)
+	qs.quickSort(arr[:pivotIndex], comparisons, swaps)
+	qs.quickSort(arr[pivotIndex+1:], comparisons, swaps)
 }
 
-// partition partitions the slice and returns the pivot index.
-func (qs QuickSorter) partition(slice []int, comparisons, swaps *int) int {
-	pivot := slice[len(slice)-1] // Choose the last element as the pivot
-	i := -1                      // Index for the smaller element
+// partition partitions the array around a pivot element
+func (qs QuickSorter) partition(arr []int, comparisons, swaps *int) int {
+	pivotIndex := len(arr) - 1
+	i := -1
 
-	for j := 0; j < len(slice)-1; j++ {
+	for j := 0; j < pivotIndex; j++ {
 		*comparisons++
 
-		// If the current element is smaller than or equal to the pivot
-		if slice[j] <= pivot {
+		if arr[j] <= arr[pivotIndex] {
 			i++
-
-			// Swap elements
-			slice[i], slice[j] = slice[j], slice[i]
+			arr[i], arr[j] = arr[j], arr[i]
 			*swaps++
 		}
 	}
 
-	// Place the pivot in the correct position
-	slice[i+1], slice[len(slice)-1] = slice[len(slice)-1], slice[i+1]
+	arr[i+1], arr[pivotIndex] = arr[pivotIndex], arr[i+1]
 	*swaps++
 
-	return i + 1 // Return the index of the pivot element
+	return i + 1
 }

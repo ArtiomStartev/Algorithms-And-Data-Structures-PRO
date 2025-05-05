@@ -16,7 +16,7 @@ func main() {
 		sort.MergeSorter{},
 	}
 
-	sliceSizes := []int{1000, 10000, 50000, 1000000}
+	arrSizes := []int{1000, 10000, 50000, 1000000}
 	orders := []utils.OrderType{utils.Ascending, utils.Descending, utils.Random}
 
 	// Open or create a file to store the results
@@ -30,11 +30,11 @@ func main() {
 
 	// Run tests for each algorithm, order size and combination
 	for _, alg := range algorithms {
-		for _, size := range sliceSizes {
+		for _, size := range arrSizes {
 			for _, order := range orders {
 				pc := sort.PerformanceChecker{
 					Algorithm: alg,
-					SliceSize: size,
+					ArrSize:   size,
 					Order:     order,
 					Runs:      5, // Number of runs for averaging
 				}

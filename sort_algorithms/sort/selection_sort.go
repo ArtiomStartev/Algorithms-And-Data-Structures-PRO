@@ -2,41 +2,32 @@ package sort
 
 import "time"
 
-// SelectionSorter is a type that implements the Sorter interface.
 type SelectionSorter struct{}
 
-// Sort sorts the slice using the selection sort algorithm.
-func (SelectionSorter) Sort(slice []int) SortResult {
-	// Record the start time of the sorting process
+// Sort performs a selection sort on the given array of integers
+func (SelectionSorter) Sort(arr []int) SortResult {
 	startTime := time.Now()
-
-	// Initialize the comparison and swap counters
 	var comparisons, swaps int
 
-	// Outer loop iterates through each element of the slice
-	for i := 0; i < len(slice); i++ {
-		minIndex := i // Initialize minIndex to the current index i
+	for i := 0; i < len(arr); i++ {
+		minIndex := i
 
-		// Inner loop iterates through the unsorted part of the slice
-		for j := i + 1; j < len(slice); j++ {
-			comparisons++ // Increment the comparison counter
+		for j := i + 1; j < len(arr); j++ {
+			comparisons++
 
-			// Update minIndex if a smaller element is found
-			if slice[j] < slice[minIndex] {
+			if arr[j] < arr[minIndex] {
 				minIndex = j
 			}
 		}
 
-		// If minIndex is different from i, swap the elements at indices i and minIndex
 		if i != minIndex {
-			slice[i], slice[minIndex] = slice[minIndex], slice[i]
-			swaps++ // Increment the swap counter
+			arr[i], arr[minIndex] = arr[minIndex], arr[i]
+			swaps++
 		}
 	}
 
-	// Return the sorted slice and the counters
 	return SortResult{
-		Slice:         slice,
+		Arr:           arr,
 		Comparisons:   comparisons,
 		Swaps:         swaps,
 		ExecutionTime: time.Since(startTime),

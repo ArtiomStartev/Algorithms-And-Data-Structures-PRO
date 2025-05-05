@@ -9,7 +9,7 @@ import (
 
 // PerformanceCheckerResult holds the details of each individual performance check
 type PerformanceCheckerResult struct {
-	SliceSize     int
+	ArrSize       int
 	Order         utils.OrderType
 	Iteration     int
 	Comparisons   int
@@ -20,24 +20,20 @@ type PerformanceCheckerResult struct {
 // PerformanceChecker struct to manage multiple runs and record results
 type PerformanceChecker struct {
 	Algorithm Sorter
-	SliceSize int
+	ArrSize   int
 	Order     utils.OrderType
 	Runs      int
 	Results   []PerformanceCheckerResult
 }
 
-// RunPerformanceCheck performs the performance check and records each iteration result
+// RunPerformanceCheck performs the performance check and records each iteration results
 func (pc *PerformanceChecker) RunPerformanceCheck() {
-	// Run the performance check for the specified number of iterations
 	for i := 0; i < pc.Runs; i++ {
-		// Generate a new slice for each iteration
-		slice := utils.GenerateSlice(pc.SliceSize, pc.Order)
-
-		// Sort the slice and record metrics
-		result := pc.Algorithm.Sort(slice)
+		arr := utils.GenerateArr(pc.ArrSize, pc.Order)
+		result := pc.Algorithm.Sort(arr)
 
 		pc.Results = append(pc.Results, PerformanceCheckerResult{
-			SliceSize:     pc.SliceSize,
+			ArrSize:       pc.ArrSize,
 			Order:         pc.Order,
 			Iteration:     i + 1,
 			Comparisons:   result.Comparisons,
@@ -49,7 +45,6 @@ func (pc *PerformanceChecker) RunPerformanceCheck() {
 
 // WriteResultsToFile writes the performance check results to a file
 func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
-	// Run the performance check
 	pc.RunPerformanceCheck()
 
 	var totalComparisons, totalSwaps int
@@ -65,10 +60,9 @@ func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 	avgSwaps := totalSwaps / pc.Runs
 	avgTime := totalTime / time.Duration(pc.Runs)
 
-	// Write main record with averages
 	mainRecord := fmt.Sprintf(
-		"Algorithm: %T | Slice Size: %d | Order: %s | Avg Comparisons: %d | Avg Swaps: %d | Avg Time: %d ns\n",
-		pc.Algorithm, pc.SliceSize, pc.Order, avgComparisons, avgSwaps, avgTime.Nanoseconds(),
+		"Algorithm: %T | Array Size: %d | Order: %s | Avg Comparisons: %d | Avg Swaps: %d | Avg Time: %d ns\n",
+		pc.Algorithm, pc.ArrSize, pc.Order, avgComparisons, avgSwaps, avgTime.Nanoseconds(),
 	)
 
 	if _, err := file.WriteString(mainRecord); err != nil {
@@ -76,7 +70,6 @@ func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 		return
 	}
 
-	// Write results for each iteration
 	for _, result := range pc.Results {
 		iterationRecord := fmt.Sprintf(
 			"Iteration: %d | Comparisons: %d | Swaps: %d | Time: %d ns\n",
@@ -85,7 +78,7 @@ func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 
 		if _, err := file.WriteString(iterationRecord); err != nil {
 			fmt.Println("Error writing to file: ", err)
-			return
+			continue
 		}
 	}
 }
