@@ -9,21 +9,20 @@ func DFS[T any](startNode *GraphNode[T]) []T {
 	var traversalOrder []T
 
 	// Perform DFS traversal starting from the start node
-	dfsTraversal[T](startNode, visited, &traversalOrder)
-
-	// Return the traversal order
-	return traversalOrder
+	return dfsTraversal[T](startNode, visited, traversalOrder)
 }
 
-func dfsTraversal[T any](startNode *GraphNode[T], visited map[*GraphNode[T]]bool, traversalOrder *[]T) {
-	visited[startNode] = true                                  // Mark the current node as visited
-	*traversalOrder = append(*traversalOrder, startNode.Value) // Add the current node's value to the traversal order
+func dfsTraversal[T any](startNode *GraphNode[T], visited map[*GraphNode[T]]bool, traversalOrder []T) []T {
+	visited[startNode] = true                                // Mark the current node as visited
+	traversalOrder = append(traversalOrder, startNode.Value) // Add the current node's value to the traversal order
 
 	// Visit all adjacent nodes that have not been visited
 	for _, neighbor := range startNode.Neighbors {
 		if !visited[neighbor] {
-			dfsTraversal[T](neighbor, visited, traversalOrder)
+			traversalOrder = dfsTraversal[T](neighbor, visited, traversalOrder)
 		}
 	}
 
+	// Return the traversal order
+	return traversalOrder
 }

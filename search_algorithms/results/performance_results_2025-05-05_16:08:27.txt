@@ -1,0 +1,192 @@
+Algorithm: search.LinearSearcher | Array Size: 1000 | Order: Ascending | Avg Time: 157 ns
+Array Size: 1000 | Order: Ascending | Iteration: 1 | Time: 413 ns
+Array Size: 1000 | Order: Ascending | Iteration: 2 | Time: 82 ns
+Array Size: 1000 | Order: Ascending | Iteration: 3 | Time: 142 ns
+Array Size: 1000 | Order: Ascending | Iteration: 4 | Time: 84 ns
+Array Size: 1000 | Order: Ascending | Iteration: 5 | Time: 68 ns
+Algorithm: search.LinearSearcher | Array Size: 1000 | Order: Descending | Avg Time: 138 ns
+Array Size: 1000 | Order: Descending | Iteration: 1 | Time: 221 ns
+Array Size: 1000 | Order: Descending | Iteration: 2 | Time: 115 ns
+Array Size: 1000 | Order: Descending | Iteration: 3 | Time: 132 ns
+Array Size: 1000 | Order: Descending | Iteration: 4 | Time: 112 ns
+Array Size: 1000 | Order: Descending | Iteration: 5 | Time: 112 ns
+Algorithm: search.LinearSearcher | Array Size: 1000 | Order: Random | Avg Time: 162 ns
+Array Size: 1000 | Order: Random | Iteration: 1 | Time: 303 ns
+Array Size: 1000 | Order: Random | Iteration: 2 | Time: 122 ns
+Array Size: 1000 | Order: Random | Iteration: 3 | Time: 139 ns
+Array Size: 1000 | Order: Random | Iteration: 4 | Time: 122 ns
+Array Size: 1000 | Order: Random | Iteration: 5 | Time: 124 ns
+Algorithm: search.LinearSearcher | Array Size: 10000 | Order: Ascending | Avg Time: 564 ns
+Array Size: 10000 | Order: Ascending | Iteration: 1 | Time: 815 ns
+Array Size: 10000 | Order: Ascending | Iteration: 2 | Time: 508 ns
+Array Size: 10000 | Order: Ascending | Iteration: 3 | Time: 498 ns
+Array Size: 10000 | Order: Ascending | Iteration: 4 | Time: 507 ns
+Array Size: 10000 | Order: Ascending | Iteration: 5 | Time: 496 ns
+Algorithm: search.LinearSearcher | Array Size: 10000 | Order: Descending | Avg Time: 1640 ns
+Array Size: 10000 | Order: Descending | Iteration: 1 | Time: 2003 ns
+Array Size: 10000 | Order: Descending | Iteration: 2 | Time: 1552 ns
+Array Size: 10000 | Order: Descending | Iteration: 3 | Time: 1547 ns
+Array Size: 10000 | Order: Descending | Iteration: 4 | Time: 1552 ns
+Array Size: 10000 | Order: Descending | Iteration: 5 | Time: 1548 ns
+Algorithm: search.LinearSearcher | Array Size: 10000 | Order: Random | Avg Time: 362 ns
+Array Size: 10000 | Order: Random | Iteration: 1 | Time: 452 ns
+Array Size: 10000 | Order: Random | Iteration: 2 | Time: 337 ns
+Array Size: 10000 | Order: Random | Iteration: 3 | Time: 348 ns
+Array Size: 10000 | Order: Random | Iteration: 4 | Time: 338 ns
+Array Size: 10000 | Order: Random | Iteration: 5 | Time: 335 ns
+Algorithm: search.LinearSearcher | Array Size: 50000 | Order: Ascending | Avg Time: 2477 ns
+Array Size: 50000 | Order: Ascending | Iteration: 1 | Time: 3159 ns
+Array Size: 50000 | Order: Ascending | Iteration: 2 | Time: 2304 ns
+Array Size: 50000 | Order: Ascending | Iteration: 3 | Time: 2263 ns
+Array Size: 50000 | Order: Ascending | Iteration: 4 | Time: 2423 ns
+Array Size: 50000 | Order: Ascending | Iteration: 5 | Time: 2239 ns
+Algorithm: search.LinearSearcher | Array Size: 50000 | Order: Descending | Avg Time: 2177 ns
+Array Size: 50000 | Order: Descending | Iteration: 1 | Time: 3331 ns
+Array Size: 50000 | Order: Descending | Iteration: 2 | Time: 1905 ns
+Array Size: 50000 | Order: Descending | Iteration: 3 | Time: 1886 ns
+Array Size: 50000 | Order: Descending | Iteration: 4 | Time: 1891 ns
+Array Size: 50000 | Order: Descending | Iteration: 5 | Time: 1876 ns
+Algorithm: search.LinearSearcher | Array Size: 50000 | Order: Random | Avg Time: 6080 ns
+Array Size: 50000 | Order: Random | Iteration: 1 | Time: 8765 ns
+Array Size: 50000 | Order: Random | Iteration: 2 | Time: 5456 ns
+Array Size: 50000 | Order: Random | Iteration: 3 | Time: 5386 ns
+Array Size: 50000 | Order: Random | Iteration: 4 | Time: 5500 ns
+Array Size: 50000 | Order: Random | Iteration: 5 | Time: 5297 ns
+Algorithm: search.LinearSearcher | Array Size: 1000000 | Order: Ascending | Avg Time: 518 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 916 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 423 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 431 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 415 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 405 ns
+Algorithm: search.LinearSearcher | Array Size: 1000000 | Order: Descending | Avg Time: 5257 ns
+Array Size: 1000000 | Order: Descending | Iteration: 1 | Time: 8139 ns
+Array Size: 1000000 | Order: Descending | Iteration: 2 | Time: 4561 ns
+Array Size: 1000000 | Order: Descending | Iteration: 3 | Time: 4538 ns
+Array Size: 1000000 | Order: Descending | Iteration: 4 | Time: 4592 ns
+Array Size: 1000000 | Order: Descending | Iteration: 5 | Time: 4456 ns
+Algorithm: search.LinearSearcher | Array Size: 1000000 | Order: Random | Avg Time: 951 ns
+Array Size: 1000000 | Order: Random | Iteration: 1 | Time: 2248 ns
+Array Size: 1000000 | Order: Random | Iteration: 2 | Time: 626 ns
+Array Size: 1000000 | Order: Random | Iteration: 3 | Time: 621 ns
+Array Size: 1000000 | Order: Random | Iteration: 4 | Time: 649 ns
+Array Size: 1000000 | Order: Random | Iteration: 5 | Time: 615 ns
+Algorithm: search.BinarySearcher | Array Size: 1000 | Order: Ascending | Avg Time: 110 ns
+Array Size: 1000 | Order: Ascending | Iteration: 1 | Time: 263 ns
+Array Size: 1000 | Order: Ascending | Iteration: 2 | Time: 119 ns
+Array Size: 1000 | Order: Ascending | Iteration: 3 | Time: 64 ns
+Array Size: 1000 | Order: Ascending | Iteration: 4 | Time: 53 ns
+Array Size: 1000 | Order: Ascending | Iteration: 5 | Time: 53 ns
+Algorithm: search.BinarySearcher | Array Size: 10000 | Order: Ascending | Avg Time: 135 ns
+Array Size: 10000 | Order: Ascending | Iteration: 1 | Time: 357 ns
+Array Size: 10000 | Order: Ascending | Iteration: 2 | Time: 122 ns
+Array Size: 10000 | Order: Ascending | Iteration: 3 | Time: 74 ns
+Array Size: 10000 | Order: Ascending | Iteration: 4 | Time: 70 ns
+Array Size: 10000 | Order: Ascending | Iteration: 5 | Time: 52 ns
+Algorithm: search.BinarySearcher | Array Size: 50000 | Order: Ascending | Avg Time: 175 ns
+Array Size: 50000 | Order: Ascending | Iteration: 1 | Time: 470 ns
+Array Size: 50000 | Order: Ascending | Iteration: 2 | Time: 168 ns
+Array Size: 50000 | Order: Ascending | Iteration: 3 | Time: 105 ns
+Array Size: 50000 | Order: Ascending | Iteration: 4 | Time: 68 ns
+Array Size: 50000 | Order: Ascending | Iteration: 5 | Time: 65 ns
+Algorithm: search.BinarySearcher | Array Size: 1000000 | Order: Ascending | Avg Time: 155 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 456 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 103 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 105 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 60 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 54 ns
+Algorithm: search.ExponentialSearcher | Array Size: 1000 | Order: Ascending | Avg Time: 115 ns
+Array Size: 1000 | Order: Ascending | Iteration: 1 | Time: 262 ns
+Array Size: 1000 | Order: Ascending | Iteration: 2 | Time: 108 ns
+Array Size: 1000 | Order: Ascending | Iteration: 3 | Time: 79 ns
+Array Size: 1000 | Order: Ascending | Iteration: 4 | Time: 68 ns
+Array Size: 1000 | Order: Ascending | Iteration: 5 | Time: 61 ns
+Algorithm: search.ExponentialSearcher | Array Size: 10000 | Order: Ascending | Avg Time: 131 ns
+Array Size: 10000 | Order: Ascending | Iteration: 1 | Time: 289 ns
+Array Size: 10000 | Order: Ascending | Iteration: 2 | Time: 132 ns
+Array Size: 10000 | Order: Ascending | Iteration: 3 | Time: 82 ns
+Array Size: 10000 | Order: Ascending | Iteration: 4 | Time: 82 ns
+Array Size: 10000 | Order: Ascending | Iteration: 5 | Time: 71 ns
+Algorithm: search.ExponentialSearcher | Array Size: 50000 | Order: Ascending | Avg Time: 192 ns
+Array Size: 50000 | Order: Ascending | Iteration: 1 | Time: 562 ns
+Array Size: 50000 | Order: Ascending | Iteration: 2 | Time: 137 ns
+Array Size: 50000 | Order: Ascending | Iteration: 3 | Time: 107 ns
+Array Size: 50000 | Order: Ascending | Iteration: 4 | Time: 82 ns
+Array Size: 50000 | Order: Ascending | Iteration: 5 | Time: 75 ns
+Algorithm: search.ExponentialSearcher | Array Size: 1000000 | Order: Ascending | Avg Time: 306 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 1075 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 168 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 127 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 94 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 70 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 1000 | Order: Ascending | Avg Time: 1797 ns
+Array Size: 1000 | Order: Ascending | Iteration: 1 | Time: 1856 ns
+Array Size: 1000 | Order: Ascending | Iteration: 2 | Time: 1785 ns
+Array Size: 1000 | Order: Ascending | Iteration: 3 | Time: 1783 ns
+Array Size: 1000 | Order: Ascending | Iteration: 4 | Time: 1781 ns
+Array Size: 1000 | Order: Ascending | Iteration: 5 | Time: 1782 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 1000 | Order: Descending | Avg Time: 342 ns
+Array Size: 1000 | Order: Descending | Iteration: 1 | Time: 445 ns
+Array Size: 1000 | Order: Descending | Iteration: 2 | Time: 331 ns
+Array Size: 1000 | Order: Descending | Iteration: 3 | Time: 316 ns
+Array Size: 1000 | Order: Descending | Iteration: 4 | Time: 323 ns
+Array Size: 1000 | Order: Descending | Iteration: 5 | Time: 299 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 1000 | Order: Random | Avg Time: 98 ns
+Array Size: 1000 | Order: Random | Iteration: 1 | Time: 165 ns
+Array Size: 1000 | Order: Random | Iteration: 2 | Time: 105 ns
+Array Size: 1000 | Order: Random | Iteration: 3 | Time: 85 ns
+Array Size: 1000 | Order: Random | Iteration: 4 | Time: 69 ns
+Array Size: 1000 | Order: Random | Iteration: 5 | Time: 67 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 10000 | Order: Ascending | Avg Time: 12209 ns
+Array Size: 10000 | Order: Ascending | Iteration: 1 | Time: 12297 ns
+Array Size: 10000 | Order: Ascending | Iteration: 2 | Time: 12078 ns
+Array Size: 10000 | Order: Ascending | Iteration: 3 | Time: 12097 ns
+Array Size: 10000 | Order: Ascending | Iteration: 4 | Time: 12273 ns
+Array Size: 10000 | Order: Ascending | Iteration: 5 | Time: 12302 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 10000 | Order: Descending | Avg Time: 13519 ns
+Array Size: 10000 | Order: Descending | Iteration: 1 | Time: 13599 ns
+Array Size: 10000 | Order: Descending | Iteration: 2 | Time: 13639 ns
+Array Size: 10000 | Order: Descending | Iteration: 3 | Time: 13465 ns
+Array Size: 10000 | Order: Descending | Iteration: 4 | Time: 13430 ns
+Array Size: 10000 | Order: Descending | Iteration: 5 | Time: 13463 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 10000 | Order: Random | Avg Time: 153 ns
+Array Size: 10000 | Order: Random | Iteration: 1 | Time: 358 ns
+Array Size: 10000 | Order: Random | Iteration: 2 | Time: 143 ns
+Array Size: 10000 | Order: Random | Iteration: 3 | Time: 99 ns
+Array Size: 10000 | Order: Random | Iteration: 4 | Time: 93 ns
+Array Size: 10000 | Order: Random | Iteration: 5 | Time: 72 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 50000 | Order: Ascending | Avg Time: 27570 ns
+Array Size: 50000 | Order: Ascending | Iteration: 1 | Time: 27518 ns
+Array Size: 50000 | Order: Ascending | Iteration: 2 | Time: 27672 ns
+Array Size: 50000 | Order: Ascending | Iteration: 3 | Time: 27581 ns
+Array Size: 50000 | Order: Ascending | Iteration: 4 | Time: 27451 ns
+Array Size: 50000 | Order: Ascending | Iteration: 5 | Time: 27630 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 50000 | Order: Descending | Avg Time: 33157 ns
+Array Size: 50000 | Order: Descending | Iteration: 1 | Time: 33247 ns
+Array Size: 50000 | Order: Descending | Iteration: 2 | Time: 33182 ns
+Array Size: 50000 | Order: Descending | Iteration: 3 | Time: 33085 ns
+Array Size: 50000 | Order: Descending | Iteration: 4 | Time: 33169 ns
+Array Size: 50000 | Order: Descending | Iteration: 5 | Time: 33106 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 50000 | Order: Random | Avg Time: 137 ns
+Array Size: 50000 | Order: Random | Iteration: 1 | Time: 325 ns
+Array Size: 50000 | Order: Random | Iteration: 2 | Time: 109 ns
+Array Size: 50000 | Order: Random | Iteration: 3 | Time: 87 ns
+Array Size: 50000 | Order: Random | Iteration: 4 | Time: 102 ns
+Array Size: 50000 | Order: Random | Iteration: 5 | Time: 62 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 1000000 | Order: Ascending | Avg Time: 18513 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 18534 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 18605 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 18424 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 18634 ns
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 18368 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 1000000 | Order: Descending | Avg Time: 3611 ns
+Array Size: 1000000 | Order: Descending | Iteration: 1 | Time: 3813 ns
+Array Size: 1000000 | Order: Descending | Iteration: 2 | Time: 3557 ns
+Array Size: 1000000 | Order: Descending | Iteration: 3 | Time: 3492 ns
+Array Size: 1000000 | Order: Descending | Iteration: 4 | Time: 3626 ns
+Array Size: 1000000 | Order: Descending | Iteration: 5 | Time: 3570 ns
+Algorithm: search.BinarySearchTreeSearcher | Array Size: 1000000 | Order: Random | Avg Time: 231 ns
+Array Size: 1000000 | Order: Random | Iteration: 1 | Time: 772 ns
+Array Size: 1000000 | Order: Random | Iteration: 2 | Time: 153 ns
+Array Size: 1000000 | Order: Random | Iteration: 3 | Time: 89 ns
+Array Size: 1000000 | Order: Random | Iteration: 4 | Time: 69 ns
+Array Size: 1000000 | Order: Random | Iteration: 5 | Time: 75 ns

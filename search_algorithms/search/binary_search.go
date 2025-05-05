@@ -19,7 +19,7 @@ func (BinarySearcher) Search(data any, x int) bool {
 		}
 
 		if arr[mid] > x {
-			low = mid - 1
+			high = mid - 1
 		}
 
 		if arr[mid] < x {
