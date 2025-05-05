@@ -12,12 +12,12 @@ import (
 func main() {
 	algorithms := []search.Searcher{
 		search.LinearSearcher{},
-		search.BinarySearchTreeSearcher{},
 		search.BinarySearcher{},
 		search.ExponentialSearcher{},
+		search.BinarySearchTreeSearcher{},
 	}
 
-	sliceSizes := []int{1000, 10000, 50000, 1000000}
+	arrSizes := []int{1000, 10000, 50000, 1000000}
 	orders := []utils.OrderType{utils.Ascending, utils.Descending, utils.Random}
 
 	// Open or create a file to store the results
@@ -31,7 +31,7 @@ func main() {
 
 	// Run tests for each algorithm, order size and combination
 	for _, alg := range algorithms {
-		for _, size := range sliceSizes {
+		for _, size := range arrSizes {
 			for _, order := range orders {
 				// Skip binary search and exponential search for descending and random orders
 				if reflect.TypeOf(alg) == reflect.TypeOf(search.BinarySearcher{}) || reflect.TypeOf(alg) == reflect.TypeOf(search.ExponentialSearcher{}) {
@@ -42,7 +42,7 @@ func main() {
 
 				pc := search.PerformanceChecker{
 					Algorithm: alg,
-					SliceSize: size,
+					ArrSize:   size,
 					Order:     order,
 					Runs:      5, // Number of runs for averaging
 				}

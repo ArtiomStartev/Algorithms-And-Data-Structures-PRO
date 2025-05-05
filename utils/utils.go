@@ -14,42 +14,37 @@ const (
 	Random     OrderType = "Random"
 )
 
-// GenerateSlice generates a slice of the specified size filled with random numbers based on the order type.
-func GenerateSlice(size int, orderType OrderType) []int {
-	slice := make([]int, size)
+// GenerateArr generates an array of random integers of a given size and order type
+func GenerateArr(size int, orderType OrderType) []int {
+	arr := make([]int, size)
 
-	// Fill the slice with random numbers
-	for i := range slice {
-		slice[i] = rand.Intn(math.MaxInt16)
+	for i := range arr {
+		arr[i] = rand.Intn(math.MaxInt16)
 	}
 
-	// Sort the slice based on the order type
 	switch orderType {
 	case Ascending:
-		slices.Sort(slice)
+		slices.Sort(arr)
 	case Descending:
-		slices.SortFunc(slice, func(i, j int) int { return j - i })
+		slices.SortFunc(arr, func(i, j int) int { return j - i })
 	case Random:
 		// Already filled with random numbers
 	}
 
-	return Unique(slice)
+	return Unique(arr)
 }
 
-// Unique returns a new slice containing only the unique elements of the input slice.
-func Unique(slice []int) []int {
-	var result []int           // The resulting slice
-	seen := make(map[int]bool) // A map to keep track of the unique elements
+// Unique returns a new array containing only the unique elements of the input array
+func Unique(arr []int) []int {
+	var result []int
+	seen := make(map[int]bool)
 
-	// Iterate over the input slice
-	for _, val := range slice {
-		// If the element is not in the map, add it to the result slice and mark it as seen
+	for _, val := range arr {
 		if ok := seen[val]; !ok {
 			seen[val] = true
 			result = append(result, val)
 		}
 	}
 
-	// Return the resulting slice
 	return result
 }

@@ -2,74 +2,65 @@ package search
 
 type BinarySearchTreeSearcher struct{}
 
-// Node represents a single node in the Binary Search Tree
 type Node struct {
 	Value int
 	Left  *Node
 	Right *Node
 }
 
-// BinarySearchTree represents the structure of a Binary Search Tree
 type BinarySearchTree struct {
 	Root *Node
 }
 
-// Search searches for the target in the Binary Search Tree and returns true if the target is found, otherwise false
-func (BinarySearchTreeSearcher) Search(data any, target int) bool {
-	// Type assertion to convert the interface{} type to a BinarySearchTree
+// Search performs a binary search on a Binary Search Tree
+func (BinarySearchTreeSearcher) Search(data any, x int) bool {
 	bst, ok := data.(*BinarySearchTree)
 	if !ok {
 		return false
 	}
-
-	return searchNode(bst.Root, target)
+	return searchNode(bst.Root, x)
 }
 
-// searchNode is a helper function that recursively searches for a value in the Binary Search Tree
-func searchNode(node *Node, target int) bool {
-	// If the current node is nil, return false
+// searchNode is a helper function to search for a value in the tree
+func searchNode(node *Node, x int) bool {
 	if node == nil {
 		return false
 	}
 
-	// If the target is found in the current node, return true
-	if target == node.Value {
+	if x == node.Value {
 		return true
-	} else if target < node.Value { // If the target is less than the current node's value, search in the left subtree
-		return searchNode(node.Left, target)
-	} else { // Otherwise, search in the right subtree
-		return searchNode(node.Right, target)
+	} else if x < node.Value {
+		return searchNode(node.Left, x)
+	} else {
+		return searchNode(node.Right, x)
 	}
 }
 
-// Insert adds a new value into the Binary Search Tree
-func (bst *BinarySearchTree) Insert(value int) {
-	bst.Root = insertNode(bst.Root, value)
+// Insert inserts a new value into the Binary Search Tree
+func (bst *BinarySearchTree) Insert(val int) {
+	bst.Root = insertNode(bst.Root, val)
 }
 
-// insertNode is a helper function that recursively inserts a value into the Binary Search Tree
-func insertNode(node *Node, value int) *Node {
-	// If the current node is nil, create a new node with the given value
+// insertNode is a helper function to insert a new value into the tree
+func insertNode(node *Node, val int) *Node {
 	if node == nil {
-		return &Node{Value: value}
+		return &Node{Value: val}
 	}
 
-	// If the value is less than the current node's value, insert it into the left subtree
-	if value < node.Value {
-		node.Left = insertNode(node.Left, value)
-	} else { // Otherwise, insert it into the right subtree
-		node.Right = insertNode(node.Right, value)
+	if val < node.Value {
+		node.Left = insertNode(node.Left, val)
+	} else {
+		node.Right = insertNode(node.Right, val)
 	}
 
-	return node // Return the current node
+	return node
 }
 
-// MapSliceToTree converts a slice of integers into a Binary Search Tree
-func MapSliceToTree(slice []int) *BinarySearchTree {
+// MapSliceToTree creates a Binary Search Tree from an array of integers
+func MapSliceToTree(arr []int) *BinarySearchTree {
 	bst := &BinarySearchTree{}
-	for _, value := range slice {
-		bst.Insert(value)
+	for _, val := range arr {
+		bst.Insert(val)
 	}
-
 	return bst
 }
