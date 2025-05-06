@@ -5,27 +5,23 @@ import (
 	"fmt"
 )
 
-// SLLNode represents a node in a singly linked list
-type SLLNode[T comparable] struct {
-	Value T
-	Next  *SLLNode[T]
-}
-
-// FindSLLNodeResult represents the result of a find operation in a singly linked list
-type FindSLLNodeResult[T comparable] struct {
-	Node *SLLNode[T]
-	Prev *SLLNode[T]
-}
-
-// SinglyLinkedList represents a singly linked list
 type SinglyLinkedList[T comparable] struct {
 	Head   *SLLNode[T]
 	Tail   *SLLNode[T]
 	Length int
 }
 
+type SLLNode[T comparable] struct {
+	Value T
+	Next  *SLLNode[T]
+}
+
+type FindSLLNodeResult[T comparable] struct {
+	Node *SLLNode[T]
+	Prev *SLLNode[T]
+}
+
 // Insert inserts a new node with the given value at the end of the linked list
-// It returns the newly inserted node
 func (sll *SinglyLinkedList[T]) Insert(value T) *SLLNode[T] {
 	newNode := &SLLNode[T]{Value: value}
 
@@ -42,7 +38,6 @@ func (sll *SinglyLinkedList[T]) Insert(value T) *SLLNode[T] {
 }
 
 // InsertAfter inserts a new node with the given value after the given node
-// It returns the newly inserted node
 func (sll *SinglyLinkedList[T]) InsertAfter(node *SLLNode[T], value T) *SLLNode[T] {
 	newNode := &SLLNode[T]{Value: value}
 
@@ -65,24 +60,22 @@ func (sll *SinglyLinkedList[T]) InsertAfter(node *SLLNode[T], value T) *SLLNode[
 }
 
 // Find searches for a node with the given value in the linked list
-// It returns the node and the previous node if the value is found, otherwise an error
 func (sll *SinglyLinkedList[T]) Find(value T) (FindSLLNodeResult[T], error) {
-	current := sll.Head
+	curr := sll.Head
 	var prev *SLLNode[T]
 
-	for current != nil {
-		if current.Value == value {
-			return FindSLLNodeResult[T]{Node: current, Prev: prev}, nil
+	for curr != nil {
+		if curr.Value == value {
+			return FindSLLNodeResult[T]{Node: curr, Prev: prev}, nil
 		}
-		prev = current
-		current = current.Next
+		prev = curr
+		curr = curr.Next
 	}
 
 	return FindSLLNodeResult[T]{}, fmt.Errorf("value %v not found in linked list", value)
 }
 
-// Remove removes the node with the given value from the linked list
-// It returns an error if the value is not found
+// Remove removes the first node with the given value from the linked list
 func (sll *SinglyLinkedList[T]) Remove(value T) error {
 	if sll.Head == nil {
 		return errors.New("linked list is empty")
@@ -97,24 +90,23 @@ func (sll *SinglyLinkedList[T]) Remove(value T) error {
 		return nil
 	}
 
-	current := sll.Head
-	for current.Next != nil {
-		if current.Next.Value == value {
-			current.Next = current.Next.Next
+	curr := sll.Head
+	for curr.Next != nil {
+		if curr.Next.Value == value {
+			curr.Next = curr.Next.Next
 			sll.Length--
-			if current.Next == nil {
-				sll.Tail = current
+			if curr.Next == nil {
+				sll.Tail = curr
 			}
 			return nil
 		}
-		current = current.Next
+		curr = curr.Next
 	}
 
 	return fmt.Errorf("value %v not found in linked list", value)
 }
 
-// RemoveAfter removes the node after the given node
-// It returns an error if the node has no next node to remove
+// RemoveAfter removes the node after the given node from the linked list
 func (sll *SinglyLinkedList[T]) RemoveAfter(node *SLLNode[T]) error {
 	if node == nil {
 		if sll.Head != nil {
@@ -142,17 +134,16 @@ func (sll *SinglyLinkedList[T]) RemoveAfter(node *SLLNode[T]) error {
 }
 
 // AssertNoCycles checks if the linked list has any cycles
-// It returns an error if a cycle is detected
 func (sll *SinglyLinkedList[T]) AssertNoCycles() error {
-	current := sll.Head
+	curr := sll.Head
 	var count int
 
-	for current != nil {
+	for curr != nil {
 		count++
 		if count > sll.Length {
 			return errors.New("cycle detected in linked list")
 		}
-		current = current.Next
+		curr = curr.Next
 	}
 
 	return nil

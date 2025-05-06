@@ -4,20 +4,19 @@ import (
 	"fmt"
 )
 
-type DLLNode[T comparable] struct {
-	Value T
-	Next  *DLLNode[T]
-	Prev  *DLLNode[T]
-}
-
 type DoublyLinkedList[T comparable] struct {
 	Head   *DLLNode[T]
 	Tail   *DLLNode[T]
 	Length int
 }
 
+type DLLNode[T comparable] struct {
+	Value T
+	Next  *DLLNode[T]
+	Prev  *DLLNode[T]
+}
+
 // Insert inserts a new node with the given value at the end of the linked list
-// It returns the newly inserted node
 func (dll *DoublyLinkedList[T]) Insert(value T) *DLLNode[T] {
 	newNode := &DLLNode[T]{Value: value}
 
@@ -35,7 +34,6 @@ func (dll *DoublyLinkedList[T]) Insert(value T) *DLLNode[T] {
 }
 
 // InsertBefore inserts a new node with the given value before the given node
-// It returns the newly inserted node
 func (dll *DoublyLinkedList[T]) InsertBefore(node *DLLNode[T], value T) *DLLNode[T] {
 	newNode := &DLLNode[T]{Value: value}
 
@@ -64,7 +62,6 @@ func (dll *DoublyLinkedList[T]) InsertBefore(node *DLLNode[T], value T) *DLLNode
 }
 
 // InsertAfter inserts a new node with the given value after the given node
-// It returns the newly inserted node
 func (dll *DoublyLinkedList[T]) InsertAfter(node *DLLNode[T], value T) *DLLNode[T] {
 	newNode := &DLLNode[T]{Value: value}
 
@@ -93,23 +90,21 @@ func (dll *DoublyLinkedList[T]) InsertAfter(node *DLLNode[T], value T) *DLLNode[
 	return newNode
 }
 
-// Find searches for a node with the given value in the linked list
-// It returns the node if found, otherwise an error
+// Find finds the first node with the given value in the linked list
 func (dll *DoublyLinkedList[T]) Find(value T) (*DLLNode[T], error) {
-	current := dll.Head
+	curr := dll.Head
 
-	for current != nil {
-		if current.Value == value {
-			return current, nil
+	for curr != nil {
+		if curr.Value == value {
+			return curr, nil
 		}
-		current = current.Next
+		curr = curr.Next
 	}
 
 	return nil, fmt.Errorf("value %v not found in the linked list", value)
 }
 
-// Remove removes the given node from the linked list
-// It returns an error if the node is nil
+// Remove removes the first node with the given value from the linked list
 func (dll *DoublyLinkedList[T]) Remove(node *DLLNode[T]) error {
 	if node == nil {
 		return fmt.Errorf("node is nil")
@@ -131,18 +126,17 @@ func (dll *DoublyLinkedList[T]) Remove(node *DLLNode[T]) error {
 	return nil
 }
 
-// AssertNoCycles checks for cycles in the doubly linked list
-// It returns an error if a cycle is detected
+// AssertNoCycles checks if the linked list has any cycles
 func (dll *DoublyLinkedList[T]) AssertNoCycles() error {
 	visited := make(map[*DLLNode[T]]bool)
-	current := dll.Head
+	curr := dll.Head
 
-	for current != nil {
-		if visited[current] {
+	for curr != nil {
+		if visited[curr] {
 			return fmt.Errorf("cycle detected in linked list")
 		}
-		visited[current] = true
-		current = current.Next
+		visited[curr] = true
+		curr = curr.Next
 	}
 
 	return nil
