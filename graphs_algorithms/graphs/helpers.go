@@ -1,9 +1,8 @@
 package graphs
 
-// GraphNode represents a single node in a graph
 type GraphNode[T any] struct {
-	Value     T               // The value of the node
-	Neighbors []*GraphNode[T] // A dynamic buffer for neighboring nodes
+	Value     T
+	Neighbors []*GraphNode[T]
 }
 
 // DirectedGraph1 initializes the first directed graph configuration

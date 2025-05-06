@@ -1,28 +1,23 @@
 package graphs
 
-// DFS performs a depth-first search on the graph
+// DFS performs a depth-first search (DFS) on a graph represented by nodes
 func DFS[T any](startNode *GraphNode[T]) []T {
-	// Initialize a map to keep track of visited nodes
+	var traversalOrder []T
 	visited := make(map[*GraphNode[T]]bool)
 
-	// Initialize a slice to store the traversal order
-	var traversalOrder []T
-
-	// Perform DFS traversal starting from the start node
 	return dfsTraversal[T](startNode, visited, traversalOrder)
 }
 
-func dfsTraversal[T any](startNode *GraphNode[T], visited map[*GraphNode[T]]bool, traversalOrder []T) []T {
-	visited[startNode] = true                                // Mark the current node as visited
-	traversalOrder = append(traversalOrder, startNode.Value) // Add the current node's value to the traversal order
+// dfsTraversal recursively traverses the graph in depth-first order
+func dfsTraversal[T any](node *GraphNode[T], visited map[*GraphNode[T]]bool, traversalOrder []T) []T {
+	visited[node] = true
+	traversalOrder = append(traversalOrder, node.Value)
 
-	// Visit all adjacent nodes that have not been visited
-	for _, neighbor := range startNode.Neighbors {
+	for _, neighbor := range node.Neighbors {
 		if !visited[neighbor] {
 			traversalOrder = dfsTraversal[T](neighbor, visited, traversalOrder)
 		}
 	}
 
-	// Return the traversal order
 	return traversalOrder
 }
