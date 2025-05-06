@@ -4,20 +4,16 @@ import (
 	"errors"
 )
 
-type HashFunc func(string) int
-
-// OpenAddressingHashBucket represents a bucket in an open addressing hash table
-type OpenAddressingHashBucket struct {
-	Occupied bool
-	Key      string
-	Value    any
-}
-
-// OpenAddressingHashTable represents an open addressing hash table
 type OpenAddressingHashTable struct {
 	Buckets  []OpenAddressingHashBucket
 	HashFunc HashFunc
 	Capacity int
+}
+
+type OpenAddressingHashBucket struct {
+	Occupied bool
+	Key      string
+	Value    any
 }
 
 // NewOpenAddressingHashTable creates a new open addressing hash table with the given capacity and hash function
@@ -30,16 +26,16 @@ func NewOpenAddressingHashTable(capacity int, hashFunc HashFunc) *OpenAddressing
 }
 
 // Add adds a new key-value pair to the hash table
-func (ht *OpenAddressingHashTable) Add(key string, value any) error {
+func (ht *OpenAddressingHashTable) Add(key string, val any) error {
 	index := ht.HashFunc(key) % ht.Capacity
-	originalIndex := index
+	origIndex := index
 
 	for {
 		if !ht.Buckets[index].Occupied {
 			ht.Buckets[index] = OpenAddressingHashBucket{
 				Occupied: true,
 				Key:      key,
-				Value:    value,
+				Value:    val,
 			}
 			return nil
 		}
@@ -47,7 +43,7 @@ func (ht *OpenAddressingHashTable) Add(key string, value any) error {
 		index = (index + 1) % ht.Capacity
 
 		// If we've looped back to the original index, the hash table is full
-		if index == originalIndex {
+		if index == origIndex {
 			break
 		}
 	}
@@ -58,6 +54,7 @@ func (ht *OpenAddressingHashTable) Add(key string, value any) error {
 // Get retrieves the value associated with the given key from the hash table
 func (ht *OpenAddressingHashTable) Get(key string) (any, error) {
 	index := ht.HashFunc(key) % ht.Capacity
+	origIndex := index
 
 	for ht.Buckets[index].Occupied {
 		if ht.Buckets[index].Key == key {
@@ -65,6 +62,11 @@ func (ht *OpenAddressingHashTable) Get(key string) (any, error) {
 		}
 
 		index = (index + 1) % ht.Capacity
+
+		// If we've looped back to the original index, the key is not in the hash table
+		if index == origIndex {
+			break
+		}
 	}
 
 	return nil, errors.New("key not found")
@@ -73,7 +75,7 @@ func (ht *OpenAddressingHashTable) Get(key string) (any, error) {
 // Remove removes the key-value pair associated with the given key from the hash table
 func (ht *OpenAddressingHashTable) Remove(key string) error {
 	index := ht.HashFunc(key) % ht.Capacity
-	originalIndex := index
+	origIndex := index
 
 	for {
 		if ht.Buckets[index].Occupied && ht.Buckets[index].Key == key {
@@ -84,7 +86,7 @@ func (ht *OpenAddressingHashTable) Remove(key string) error {
 		index = (index + 1) % ht.Capacity
 
 		// If we've looped back to the original index, the key is not in the hash table
-		if index == originalIndex {
+		if index == origIndex {
 			break
 		}
 	}
