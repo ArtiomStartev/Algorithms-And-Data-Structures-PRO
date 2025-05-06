@@ -16,7 +16,6 @@ type OpenAddressingHashBucket struct {
 	Value    any
 }
 
-// NewOpenAddressingHashTable creates a new open addressing hash table with the given capacity and hash function
 func NewOpenAddressingHashTable(capacity int, hashFunc HashFunc) *OpenAddressingHashTable {
 	return &OpenAddressingHashTable{
 		Buckets:  make([]OpenAddressingHashBucket, capacity),
