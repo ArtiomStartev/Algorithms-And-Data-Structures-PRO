@@ -30,9 +30,9 @@ func (pc *PerformanceChecker) RunPerformanceCheck() time.Duration {
 	var totalDuration time.Duration
 	var failures int
 
-	data, x := pc.getDataAndTarget()
-
 	for i := 0; i < pc.Runs; i++ {
+		data, x := pc.getDataAndTarget()
+
 		startTime := time.Now()
 		found := pc.Algorithm.Search(data, x)
 		duration := time.Since(startTime)
@@ -64,7 +64,7 @@ func (pc *PerformanceChecker) getDataAndTarget() (any, int) {
 
 	switch pc.Algorithm.(type) {
 	case BinarySearchTreeSearcher:
-		return MapSliceToTree(arr), x
+		return MapSliceToTree(utils.Unique(arr)), x
 	default:
 		return arr, x
 	}
@@ -74,8 +74,8 @@ func (pc *PerformanceChecker) getDataAndTarget() (any, int) {
 func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 	averageTime := pc.RunPerformanceCheck()
 
-	avgResult := fmt.Sprintf("Algorithm: %T | Array Size: %d | Order: %s | Avg Time: %d ns\n",
-		pc.Algorithm, pc.ArrSize, pc.Order, averageTime.Nanoseconds())
+	avgResult := fmt.Sprintf("Algorithm: %s | Array Size: %d | Order: %s | Avg Time: %f ms\n",
+		getAlgorithmName(pc.Algorithm), pc.ArrSize, pc.Order, float64(averageTime.Nanoseconds())/1e6)
 
 	if _, err := file.WriteString(avgResult); err != nil {
 		fmt.Println("Error writing to file: ", err)
@@ -84,12 +84,28 @@ func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 
 	// Write detailed results for each run to file
 	for _, result := range pc.Results {
-		detailedResult := fmt.Sprintf("Array Size: %d | Order: %s | Iteration: %d | Time: %d ns\n",
-			result.ArrSize, result.Order, result.Iteration, result.ExecutionTime.Nanoseconds())
+		detailedResult := fmt.Sprintf("Array Size: %d | Order: %s | Iteration: %d | Time: %f ms\n",
+			result.ArrSize, result.Order, result.Iteration, float64(result.ExecutionTime.Nanoseconds())/1e6)
 
 		if _, err := file.WriteString(detailedResult); err != nil {
 			fmt.Println("Error writing to file: ", err)
 			continue
 		}
+	}
+}
+
+// getAlgorithmName returns the name of the algorithm based on its type
+func getAlgorithmName(alg Searcher) string {
+	switch alg.(type) {
+	case LinearSearcher:
+		return "Linear Search"
+	case BinarySearcher:
+		return "Binary Search"
+	case ExponentialSearcher:
+		return "Exponential Search"
+	case BinarySearchTreeSearcher:
+		return "Binary Search Tree"
+	default:
+		return "Unknown Algorithm"
 	}
 }

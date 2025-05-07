@@ -31,7 +31,7 @@ func GenerateArr(size int, orderType OrderType) []int {
 		// Already filled with random numbers
 	}
 
-	return Unique(arr)
+	return arr
 }
 
 // Unique returns a new array containing only the unique elements of the input array

@@ -17,7 +17,7 @@ func main() {
 		search.BinarySearchTreeSearcher{},
 	}
 
-	arrSizes := []int{1000, 10000, 50000, 1000000}
+	arrSizes := []int{100000, 1000000, 10000000, 100000000, 1000000000}
 	orders := []utils.OrderType{utils.Ascending, utils.Descending, utils.Random}
 
 	// Open or create a file to store the results
