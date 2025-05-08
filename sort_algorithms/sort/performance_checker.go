@@ -61,9 +61,8 @@ func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 	avgTime := totalTime / time.Duration(pc.Runs)
 
 	mainRecord := fmt.Sprintf(
-		"Algorithm: %T | Array Size: %d | Order: %s | Avg Comparisons: %d | Avg Swaps: %d | Avg Time: %d ns\n",
-		pc.Algorithm, pc.ArrSize, pc.Order, avgComparisons, avgSwaps, avgTime.Nanoseconds(),
-	)
+		"Algorithm: %s | Array Size: %d | Order: %s | Avg Comparisons: %d | Avg Swaps: %d | Avg Time: %f s\n",
+		getAlgorithmName(pc.Algorithm), pc.ArrSize, pc.Order, avgComparisons, avgSwaps, avgTime.Seconds())
 
 	if _, err := file.WriteString(mainRecord); err != nil {
 		fmt.Println("Error writing to file: ", err)
@@ -72,13 +71,27 @@ func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
 
 	for _, result := range pc.Results {
 		iterationRecord := fmt.Sprintf(
-			"Iteration: %d | Comparisons: %d | Swaps: %d | Time: %d ns\n",
-			result.Iteration, result.Comparisons, result.Swaps, result.ExecutionTime.Nanoseconds(),
-		)
+			"Iteration: %d | Comparisons: %d | Swaps: %d | Time: %f s\n",
+			result.Iteration, result.Comparisons, result.Swaps, result.ExecutionTime.Seconds())
 
 		if _, err := file.WriteString(iterationRecord); err != nil {
 			fmt.Println("Error writing to file: ", err)
 			continue
 		}
+	}
+}
+
+func getAlgorithmName(alg Sorter) string {
+	switch alg.(type) {
+	case SelectionSorter:
+		return "Selection Sort"
+	case BubbleSorter:
+		return "Bubble Sort"
+	case QuickSorter:
+		return "Quick Sort"
+	case MergeSorter:
+		return "Merge Sort"
+	default:
+		return "Unknown Algorithm"
 	}
 }

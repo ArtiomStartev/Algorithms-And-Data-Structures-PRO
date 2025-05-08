@@ -16,7 +16,7 @@ func main() {
 		sort.MergeSorter{},
 	}
 
-	arrSizes := []int{1000, 10000, 50000, 1000000}
+	arrSizes := []int{1000, 10000, 100000, 250000}
 	orders := []utils.OrderType{utils.Ascending, utils.Descending, utils.Random}
 
 	// Open or create a file to store the results

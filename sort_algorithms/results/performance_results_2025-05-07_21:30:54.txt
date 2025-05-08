@@ -1,0 +1,288 @@
+Algorithm: Selection Sort | Array Size: 1000 | Order: Ascending | Avg Comparisons: 499500 | Avg Swaps: 0 | Avg Time: 0.000540 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 0 | Time: 0.000508 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 0 | Time: 0.000507 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 0 | Time: 0.000703 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 0 | Time: 0.000519 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 0 | Time: 0.000465 s
+Algorithm: Selection Sort | Array Size: 1000 | Order: Descending | Avg Comparisons: 499500 | Avg Swaps: 508 | Avg Time: 0.000451 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 505 | Time: 0.000445 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 509 | Time: 0.000467 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 508 | Time: 0.000449 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 506 | Time: 0.000443 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 512 | Time: 0.000451 s
+Algorithm: Selection Sort | Array Size: 1000 | Order: Random | Avg Comparisons: 499500 | Avg Swaps: 994 | Avg Time: 0.000494 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 998 | Time: 0.000493 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 990 | Time: 0.000494 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 996 | Time: 0.000492 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 991 | Time: 0.000494 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 995 | Time: 0.000494 s
+Algorithm: Selection Sort | Array Size: 10000 | Order: Ascending | Avg Comparisons: 49995000 | Avg Swaps: 0 | Avg Time: 0.064911 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 0 | Time: 0.046490 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 0 | Time: 0.136613 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 0 | Time: 0.048097 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 0 | Time: 0.047132 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 0 | Time: 0.046224 s
+Algorithm: Selection Sort | Array Size: 10000 | Order: Descending | Avg Comparisons: 49995000 | Avg Swaps: 5565 | Avg Time: 0.052137 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 5546 | Time: 0.052082 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 5570 | Time: 0.052595 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 5569 | Time: 0.052049 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 5569 | Time: 0.051335 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 5575 | Time: 0.052622 s
+Algorithm: Selection Sort | Array Size: 10000 | Order: Random | Avg Comparisons: 49995000 | Avg Swaps: 9990 | Avg Time: 0.046971 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 9993 | Time: 0.046554 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 9987 | Time: 0.046756 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 9989 | Time: 0.047312 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 9990 | Time: 0.047175 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 9995 | Time: 0.047057 s
+Algorithm: Selection Sort | Array Size: 100000 | Order: Ascending | Avg Comparisons: 4999950000 | Avg Swaps: 0 | Avg Time: 4.888884 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 0 | Time: 5.012261 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.754586 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.857737 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.986674 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.833160 s
+Algorithm: Selection Sort | Array Size: 100000 | Order: Descending | Avg Comparisons: 4999950000 | Avg Swaps: 66941 | Avg Time: 10.897329 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 66962 | Time: 11.962033 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 66890 | Time: 12.894548 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 66941 | Time: 10.326520 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 67003 | Time: 9.734603 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 66910 | Time: 9.568944 s
+Algorithm: Selection Sort | Array Size: 100000 | Order: Random | Avg Comparisons: 4999950000 | Avg Swaps: 99987 | Avg Time: 4.893355 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 99985 | Time: 4.693986 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 99983 | Time: 4.745565 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 99991 | Time: 4.725116 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 99991 | Time: 5.582887 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 99985 | Time: 4.719221 s
+Algorithm: Selection Sort | Array Size: 250000 | Order: Ascending | Avg Comparisons: 31249875000 | Avg Swaps: 0 | Avg Time: 30.108728 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 0 | Time: 29.057811 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 0 | Time: 30.207885 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 0 | Time: 31.522711 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 0 | Time: 29.971659 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 0 | Time: 29.783574 s
+Algorithm: Selection Sort | Array Size: 250000 | Order: Descending | Avg Comparisons: 31249875000 | Avg Swaps: 175468 | Avg Time: 44.786825 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 175802 | Time: 43.710697 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 175232 | Time: 44.906410 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 175691 | Time: 46.597265 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 175191 | Time: 44.348431 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 175427 | Time: 44.371319 s
+Algorithm: Selection Sort | Array Size: 250000 | Order: Random | Avg Comparisons: 31249875000 | Avg Swaps: 249981 | Avg Time: 28.343668 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 249980 | Time: 28.732726 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 249981 | Time: 28.125362 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 249978 | Time: 28.514389 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 249982 | Time: 28.402166 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 249986 | Time: 27.943695 s
+Algorithm: Bubble Sort | Array Size: 1000 | Order: Ascending | Avg Comparisons: 499500 | Avg Swaps: 0 | Avg Time: 0.000436 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 0 | Time: 0.000393 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 0 | Time: 0.000483 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 0 | Time: 0.000483 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 0 | Time: 0.000393 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 0 | Time: 0.000431 s
+Algorithm: Bubble Sort | Array Size: 1000 | Order: Descending | Avg Comparisons: 499500 | Avg Swaps: 499487 | Avg Time: 0.000528 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 499485 | Time: 0.000513 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 499485 | Time: 0.000589 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 499487 | Time: 0.000512 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 499493 | Time: 0.000514 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 499489 | Time: 0.000512 s
+Algorithm: Bubble Sort | Array Size: 1000 | Order: Random | Avg Comparisons: 499500 | Avg Swaps: 254502 | Avg Time: 0.000742 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 258047 | Time: 0.000678 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 254281 | Time: 0.000884 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 247047 | Time: 0.000687 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 260637 | Time: 0.000749 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 252499 | Time: 0.000715 s
+Algorithm: Bubble Sort | Array Size: 10000 | Order: Ascending | Avg Comparisons: 49995000 | Avg Swaps: 0 | Avg Time: 0.039701 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 0 | Time: 0.039491 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 0 | Time: 0.039993 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 0 | Time: 0.040264 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 0 | Time: 0.039386 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 0 | Time: 0.039371 s
+Algorithm: Bubble Sort | Array Size: 10000 | Order: Descending | Avg Comparisons: 49995000 | Avg Swaps: 49993455 | Avg Time: 0.051372 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 49993406 | Time: 0.051253 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 49993459 | Time: 0.050838 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 49993462 | Time: 0.050952 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 49993461 | Time: 0.052476 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 49993489 | Time: 0.051340 s
+Algorithm: Bubble Sort | Array Size: 10000 | Order: Random | Avg Comparisons: 49995000 | Avg Swaps: 24900030 | Avg Time: 0.091001 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 24724571 | Time: 0.089626 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 24958026 | Time: 0.090484 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 24865332 | Time: 0.090975 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 24794875 | Time: 0.090209 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 25157346 | Time: 0.093713 s
+Algorithm: Bubble Sort | Array Size: 100000 | Order: Ascending | Avg Comparisons: 4999950000 | Avg Swaps: 0 | Avg Time: 4.025205 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.058537 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.042065 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.049217 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 0 | Time: 3.966851 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 0 | Time: 4.009355 s
+Algorithm: Bubble Sort | Array Size: 100000 | Order: Descending | Avg Comparisons: 4999950000 | Avg Swaps: 4999797603 | Avg Time: 5.310763 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 4999797934 | Time: 5.338203 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 4999797265 | Time: 5.394030 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 4999797571 | Time: 5.221523 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 4999797768 | Time: 5.284683 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 4999797481 | Time: 5.315375 s
+Algorithm: Bubble Sort | Array Size: 100000 | Order: Random | Avg Comparisons: 4999950000 | Avg Swaps: 2499010822 | Avg Time: 12.689232 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 2500394450 | Time: 12.805025 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 2493829395 | Time: 12.760622 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 2493942015 | Time: 12.737042 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 2504169525 | Time: 12.537032 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 2502718725 | Time: 12.606440 s
+Algorithm: Bubble Sort | Array Size: 250000 | Order: Ascending | Avg Comparisons: 31249875000 | Avg Swaps: 0 | Avg Time: 25.187275 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 0 | Time: 25.146898 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 0 | Time: 25.314444 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 0 | Time: 25.228188 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 0 | Time: 25.115020 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 0 | Time: 25.131824 s
+Algorithm: Bubble Sort | Array Size: 250000 | Order: Descending | Avg Comparisons: 31249875000 | Avg Swaps: 31248921526 | Avg Time: 32.758010 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 31248922290 | Time: 32.636272 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 31248921641 | Time: 32.741325 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 31248921309 | Time: 32.742368 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 31248920853 | Time: 32.834545 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 31248921538 | Time: 32.835539 s
+Algorithm: Bubble Sort | Array Size: 250000 | Order: Random | Avg Comparisons: 31249875000 | Avg Swaps: 15624956168 | Avg Time: 80.657478 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 15615661367 | Time: 80.205204 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 15616515641 | Time: 80.690661 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 15634979151 | Time: 80.619116 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 15640292705 | Time: 81.161964 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 15617331978 | Time: 80.610446 s
+Algorithm: Quick Sort | Array Size: 1000 | Order: Ascending | Avg Comparisons: 499500 | Avg Swaps: 500499 | Avg Time: 0.000658 s
+Iteration: 1 | Comparisons: 499500 | Swaps: 500499 | Time: 0.000734 s
+Iteration: 2 | Comparisons: 499500 | Swaps: 500499 | Time: 0.000616 s
+Iteration: 3 | Comparisons: 499500 | Swaps: 500499 | Time: 0.000616 s
+Iteration: 4 | Comparisons: 499500 | Swaps: 500499 | Time: 0.000703 s
+Iteration: 5 | Comparisons: 499500 | Swaps: 500499 | Time: 0.000619 s
+Algorithm: Quick Sort | Array Size: 1000 | Order: Descending | Avg Comparisons: 492445 | Avg Swaps: 247042 | Avg Time: 0.000607 s
+Iteration: 1 | Comparisons: 490262 | Swaps: 245862 | Time: 0.000597 s
+Iteration: 2 | Comparisons: 490648 | Swaps: 246057 | Time: 0.000597 s
+Iteration: 3 | Comparisons: 491318 | Swaps: 246812 | Time: 0.000598 s
+Iteration: 4 | Comparisons: 496620 | Swaps: 249055 | Time: 0.000643 s
+Iteration: 5 | Comparisons: 493380 | Swaps: 247427 | Time: 0.000600 s
+Algorithm: Quick Sort | Array Size: 1000 | Order: Random | Avg Comparisons: 11647 | Avg Swaps: 6072 | Avg Time: 0.000041 s
+Iteration: 1 | Comparisons: 11873 | Swaps: 5587 | Time: 0.000041 s
+Iteration: 2 | Comparisons: 11047 | Swaps: 6304 | Time: 0.000041 s
+Iteration: 3 | Comparisons: 10880 | Swaps: 5131 | Time: 0.000040 s
+Iteration: 4 | Comparisons: 12511 | Swaps: 7733 | Time: 0.000041 s
+Iteration: 5 | Comparisons: 11927 | Swaps: 5607 | Time: 0.000041 s
+Algorithm: Quick Sort | Array Size: 10000 | Order: Ascending | Avg Comparisons: 49995000 | Avg Swaps: 50004999 | Avg Time: 0.063044 s
+Iteration: 1 | Comparisons: 49995000 | Swaps: 50004999 | Time: 0.062923 s
+Iteration: 2 | Comparisons: 49995000 | Swaps: 50004999 | Time: 0.063559 s
+Iteration: 3 | Comparisons: 49995000 | Swaps: 50004999 | Time: 0.062779 s
+Iteration: 4 | Comparisons: 49995000 | Swaps: 50004999 | Time: 0.063064 s
+Iteration: 5 | Comparisons: 49995000 | Swaps: 50004999 | Time: 0.062895 s
+Algorithm: Quick Sort | Array Size: 10000 | Order: Descending | Avg Comparisons: 43503811 | Avg Swaps: 21989512 | Avg Time: 0.053620 s
+Iteration: 1 | Comparisons: 43498563 | Swaps: 21980386 | Time: 0.053792 s
+Iteration: 2 | Comparisons: 43526547 | Swaps: 21967311 | Time: 0.053775 s
+Iteration: 3 | Comparisons: 43665815 | Swaps: 22106581 | Time: 0.053604 s
+Iteration: 4 | Comparisons: 43364399 | Swaps: 21934706 | Time: 0.053271 s
+Iteration: 5 | Comparisons: 43463734 | Swaps: 21958580 | Time: 0.053659 s
+Algorithm: Quick Sort | Array Size: 10000 | Order: Random | Avg Comparisons: 154849 | Avg Swaps: 85319 | Avg Time: 0.000631 s
+Iteration: 1 | Comparisons: 151725 | Swaps: 86703 | Time: 0.000691 s
+Iteration: 2 | Comparisons: 154549 | Swaps: 84133 | Time: 0.000859 s
+Iteration: 3 | Comparisons: 156985 | Swaps: 82293 | Time: 0.000561 s
+Iteration: 4 | Comparisons: 151626 | Swaps: 79084 | Time: 0.000526 s
+Iteration: 5 | Comparisons: 159361 | Swaps: 94385 | Time: 0.000519 s
+Algorithm: Quick Sort | Array Size: 100000 | Order: Ascending | Avg Comparisons: 4999950000 | Avg Swaps: 5000049999 | Avg Time: 6.378990 s
+Iteration: 1 | Comparisons: 4999950000 | Swaps: 5000049999 | Time: 6.412662 s
+Iteration: 2 | Comparisons: 4999950000 | Swaps: 5000049999 | Time: 6.371596 s
+Iteration: 3 | Comparisons: 4999950000 | Swaps: 5000049999 | Time: 6.351950 s
+Iteration: 4 | Comparisons: 4999950000 | Swaps: 5000049999 | Time: 6.343471 s
+Iteration: 5 | Comparisons: 4999950000 | Swaps: 5000049999 | Time: 6.415271 s
+Algorithm: Quick Sort | Array Size: 100000 | Order: Descending | Avg Comparisons: 2315979644 | Avg Swaps: 1534002941 | Avg Time: 2.933836 s
+Iteration: 1 | Comparisons: 2319783704 | Swaps: 1537437345 | Time: 2.986966 s
+Iteration: 2 | Comparisons: 2310784938 | Swaps: 1531467188 | Time: 2.979992 s
+Iteration: 3 | Comparisons: 2321394689 | Swaps: 1537803122 | Time: 2.933067 s
+Iteration: 4 | Comparisons: 2312625750 | Swaps: 1531672693 | Time: 2.897894 s
+Iteration: 5 | Comparisons: 2315309142 | Swaps: 1531634360 | Time: 2.871259 s
+Algorithm: Quick Sort | Array Size: 100000 | Order: Random | Avg Comparisons: 2003441 | Avg Swaps: 1165256 | Avg Time: 0.006472 s
+Iteration: 1 | Comparisons: 2015287 | Swaps: 1167980 | Time: 0.006581 s
+Iteration: 2 | Comparisons: 1970452 | Swaps: 1066799 | Time: 0.006804 s
+Iteration: 3 | Comparisons: 1995600 | Swaps: 1127759 | Time: 0.006099 s
+Iteration: 4 | Comparisons: 1962291 | Swaps: 1173726 | Time: 0.006699 s
+Iteration: 5 | Comparisons: 2073576 | Swaps: 1290018 | Time: 0.006179 s
+Algorithm: Quick Sort | Array Size: 250000 | Order: Ascending | Avg Comparisons: 31249875000 | Avg Swaps: 31250124999 | Avg Time: 39.413088 s
+Iteration: 1 | Comparisons: 31249875000 | Swaps: 31250124999 | Time: 39.587637 s
+Iteration: 2 | Comparisons: 31249875000 | Swaps: 31250124999 | Time: 39.296053 s
+Iteration: 3 | Comparisons: 31249875000 | Swaps: 31250124999 | Time: 39.315847 s
+Iteration: 4 | Comparisons: 31249875000 | Swaps: 31250124999 | Time: 39.383416 s
+Iteration: 5 | Comparisons: 31249875000 | Swaps: 31250124999 | Time: 39.482488 s
+Algorithm: Quick Sort | Array Size: 250000 | Order: Descending | Avg Comparisons: 10689439805 | Avg Swaps: 8642806235 | Avg Time: 13.377596 s
+Iteration: 1 | Comparisons: 10622909309 | Swaps: 8588832376 | Time: 13.293285 s
+Iteration: 2 | Comparisons: 10682866560 | Swaps: 8635034680 | Time: 13.473123 s
+Iteration: 3 | Comparisons: 10707358996 | Swaps: 8658000051 | Time: 13.377901 s
+Iteration: 4 | Comparisons: 10733441846 | Swaps: 8686179493 | Time: 13.441316 s
+Iteration: 5 | Comparisons: 10700622318 | Swaps: 8645984576 | Time: 13.302357 s
+Algorithm: Quick Sort | Array Size: 250000 | Order: Random | Avg Comparisons: 5797698 | Avg Swaps: 3547796 | Avg Time: 0.016458 s
+Iteration: 1 | Comparisons: 5870882 | Swaps: 3459962 | Time: 0.016523 s
+Iteration: 2 | Comparisons: 6011929 | Swaps: 3612596 | Time: 0.016387 s
+Iteration: 3 | Comparisons: 5741174 | Swaps: 3630183 | Time: 0.016499 s
+Iteration: 4 | Comparisons: 5728642 | Swaps: 3415033 | Time: 0.016179 s
+Iteration: 5 | Comparisons: 5635867 | Swaps: 3621209 | Time: 0.016704 s
+Algorithm: Merge Sort | Array Size: 1000 | Order: Ascending | Avg Comparisons: 4932 | Avg Swaps: 9976 | Avg Time: 0.000065 s
+Iteration: 1 | Comparisons: 4932 | Swaps: 9976 | Time: 0.000077 s
+Iteration: 2 | Comparisons: 4932 | Swaps: 9976 | Time: 0.000076 s
+Iteration: 3 | Comparisons: 4932 | Swaps: 9976 | Time: 0.000061 s
+Iteration: 4 | Comparisons: 4932 | Swaps: 9976 | Time: 0.000054 s
+Iteration: 5 | Comparisons: 4932 | Swaps: 9976 | Time: 0.000055 s
+Algorithm: Merge Sort | Array Size: 1000 | Order: Descending | Avg Comparisons: 5051 | Avg Swaps: 9976 | Avg Time: 0.000058 s
+Iteration: 1 | Comparisons: 5052 | Swaps: 9976 | Time: 0.000060 s
+Iteration: 2 | Comparisons: 5048 | Swaps: 9976 | Time: 0.000058 s
+Iteration: 3 | Comparisons: 5051 | Swaps: 9976 | Time: 0.000058 s
+Iteration: 4 | Comparisons: 5055 | Swaps: 9976 | Time: 0.000057 s
+Iteration: 5 | Comparisons: 5049 | Swaps: 9976 | Time: 0.000060 s
+Algorithm: Merge Sort | Array Size: 1000 | Order: Random | Avg Comparisons: 8700 | Avg Swaps: 9976 | Avg Time: 0.000088 s
+Iteration: 1 | Comparisons: 8702 | Swaps: 9976 | Time: 0.000088 s
+Iteration: 2 | Comparisons: 8701 | Swaps: 9976 | Time: 0.000086 s
+Iteration: 3 | Comparisons: 8697 | Swaps: 9976 | Time: 0.000088 s
+Iteration: 4 | Comparisons: 8701 | Swaps: 9976 | Time: 0.000089 s
+Iteration: 5 | Comparisons: 8701 | Swaps: 9976 | Time: 0.000087 s
+Algorithm: Merge Sort | Array Size: 10000 | Order: Ascending | Avg Comparisons: 64608 | Avg Swaps: 133616 | Avg Time: 0.000778 s
+Iteration: 1 | Comparisons: 64608 | Swaps: 133616 | Time: 0.001297 s
+Iteration: 2 | Comparisons: 64608 | Swaps: 133616 | Time: 0.000500 s
+Iteration: 3 | Comparisons: 64608 | Swaps: 133616 | Time: 0.000554 s
+Iteration: 4 | Comparisons: 64608 | Swaps: 133616 | Time: 0.001053 s
+Iteration: 5 | Comparisons: 64608 | Swaps: 133616 | Time: 0.000486 s
+Algorithm: Merge Sort | Array Size: 10000 | Order: Descending | Avg Comparisons: 69574 | Avg Swaps: 133616 | Avg Time: 0.000620 s
+Iteration: 1 | Comparisons: 69594 | Swaps: 133616 | Time: 0.000506 s
+Iteration: 2 | Comparisons: 69550 | Swaps: 133616 | Time: 0.000772 s
+Iteration: 3 | Comparisons: 69566 | Swaps: 133616 | Time: 0.000542 s
+Iteration: 4 | Comparisons: 69567 | Swaps: 133616 | Time: 0.000521 s
+Iteration: 5 | Comparisons: 69597 | Swaps: 133616 | Time: 0.000757 s
+Algorithm: Merge Sort | Array Size: 10000 | Order: Random | Avg Comparisons: 120473 | Avg Swaps: 133616 | Avg Time: 0.000960 s
+Iteration: 1 | Comparisons: 120306 | Swaps: 133616 | Time: 0.000886 s
+Iteration: 2 | Comparisons: 120548 | Swaps: 133616 | Time: 0.001002 s
+Iteration: 3 | Comparisons: 120494 | Swaps: 133616 | Time: 0.001158 s
+Iteration: 4 | Comparisons: 120527 | Swaps: 133616 | Time: 0.000873 s
+Iteration: 5 | Comparisons: 120491 | Swaps: 133616 | Time: 0.000881 s
+Algorithm: Merge Sort | Array Size: 100000 | Order: Ascending | Avg Comparisons: 815024 | Avg Swaps: 1668928 | Avg Time: 0.007549 s
+Iteration: 1 | Comparisons: 815024 | Swaps: 1668928 | Time: 0.006787 s
+Iteration: 2 | Comparisons: 815024 | Swaps: 1668928 | Time: 0.007636 s
+Iteration: 3 | Comparisons: 815024 | Swaps: 1668928 | Time: 0.007487 s
+Iteration: 4 | Comparisons: 815024 | Swaps: 1668928 | Time: 0.007781 s
+Iteration: 5 | Comparisons: 815024 | Swaps: 1668928 | Time: 0.008055 s
+Algorithm: Merge Sort | Array Size: 100000 | Order: Descending | Avg Comparisons: 881873 | Avg Swaps: 1668928 | Avg Time: 0.007868 s
+Iteration: 1 | Comparisons: 881901 | Swaps: 1668928 | Time: 0.008108 s
+Iteration: 2 | Comparisons: 882160 | Swaps: 1668928 | Time: 0.008135 s
+Iteration: 3 | Comparisons: 881878 | Swaps: 1668928 | Time: 0.007711 s
+Iteration: 4 | Comparisons: 881582 | Swaps: 1668928 | Time: 0.007800 s
+Iteration: 5 | Comparisons: 881847 | Swaps: 1668928 | Time: 0.007587 s
+Algorithm: Merge Sort | Array Size: 100000 | Order: Random | Avg Comparisons: 1536355 | Avg Swaps: 1668928 | Avg Time: 0.012369 s
+Iteration: 1 | Comparisons: 1536260 | Swaps: 1668928 | Time: 0.012376 s
+Iteration: 2 | Comparisons: 1536330 | Swaps: 1668928 | Time: 0.012078 s
+Iteration: 3 | Comparisons: 1536234 | Swaps: 1668928 | Time: 0.012526 s
+Iteration: 4 | Comparisons: 1536599 | Swaps: 1668928 | Time: 0.012412 s
+Iteration: 5 | Comparisons: 1536355 | Swaps: 1668928 | Time: 0.012453 s
+Algorithm: Merge Sort | Array Size: 250000 | Order: Ascending | Avg Comparisons: 2221248 | Avg Swaps: 4487856 | Avg Time: 0.018384 s
+Iteration: 1 | Comparisons: 2221248 | Swaps: 4487856 | Time: 0.018762 s
+Iteration: 2 | Comparisons: 2221248 | Swaps: 4487856 | Time: 0.017880 s
+Iteration: 3 | Comparisons: 2221248 | Swaps: 4487856 | Time: 0.018205 s
+Iteration: 4 | Comparisons: 2221248 | Swaps: 4487856 | Time: 0.018501 s
+Iteration: 5 | Comparisons: 2221248 | Swaps: 4487856 | Time: 0.018574 s
+Algorithm: Merge Sort | Array Size: 250000 | Order: Descending | Avg Comparisons: 2419563 | Avg Swaps: 4487856 | Avg Time: 0.019609 s
+Iteration: 1 | Comparisons: 2419180 | Swaps: 4487856 | Time: 0.019254 s
+Iteration: 2 | Comparisons: 2419993 | Swaps: 4487856 | Time: 0.019946 s
+Iteration: 3 | Comparisons: 2419983 | Swaps: 4487856 | Time: 0.019834 s
+Iteration: 4 | Comparisons: 2419884 | Swaps: 4487856 | Time: 0.019339 s
+Iteration: 5 | Comparisons: 2418776 | Swaps: 4487856 | Time: 0.019671 s
+Algorithm: Merge Sort | Array Size: 250000 | Order: Random | Avg Comparisons: 4168577 | Avg Swaps: 4487856 | Avg Time: 0.032464 s
+Iteration: 1 | Comparisons: 4168649 | Swaps: 4487856 | Time: 0.032031 s
+Iteration: 2 | Comparisons: 4168923 | Swaps: 4487856 | Time: 0.031333 s
+Iteration: 3 | Comparisons: 4168959 | Swaps: 4487856 | Time: 0.033230 s
+Iteration: 4 | Comparisons: 4167794 | Swaps: 4487856 | Time: 0.033697 s
+Iteration: 5 | Comparisons: 4168560 | Swaps: 4487856 | Time: 0.032029 s

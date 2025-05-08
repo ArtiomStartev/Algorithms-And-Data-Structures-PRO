@@ -72,10 +72,10 @@ func (pc *PerformanceChecker) getDataAndTarget() (any, int) {
 
 // WriteResultsToFile outputs both the average result and individual iteration results to a file
 func (pc *PerformanceChecker) WriteResultsToFile(file *os.File) {
-	averageTime := pc.RunPerformanceCheck()
+	avgTime := pc.RunPerformanceCheck()
 
 	avgResult := fmt.Sprintf("Algorithm: %s | Array Size: %d | Order: %s | Avg Time: %f ms\n",
-		getAlgorithmName(pc.Algorithm), pc.ArrSize, pc.Order, float64(averageTime.Nanoseconds())/1e6)
+		getAlgorithmName(pc.Algorithm), pc.ArrSize, pc.Order, float64(avgTime.Nanoseconds())/1e6)
 
 	if _, err := file.WriteString(avgResult); err != nil {
 		fmt.Println("Error writing to file: ", err)
