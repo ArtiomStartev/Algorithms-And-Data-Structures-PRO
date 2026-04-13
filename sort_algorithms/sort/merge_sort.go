@@ -51,16 +51,14 @@ func (ms MergeSorter) merge(left, right []int, comparisons, swaps *int) []int {
 		*swaps++
 	}
 
-	for i < len(left) {
-		sorted = append(sorted, left[i])
-		i++
-		*swaps++
+	if i < len(left) {
+		sorted = append(sorted, left[i:]...)
+		*swaps += len(left) - i
 	}
 
-	for j < len(right) {
-		sorted = append(sorted, right[j])
-		j++
-		*swaps++
+	if j < len(right) {
+		sorted = append(sorted, right[j:]...)
+		*swaps += len(right) - j
 	}
 
 	return sorted

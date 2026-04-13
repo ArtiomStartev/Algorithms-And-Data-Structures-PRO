@@ -9,7 +9,7 @@ func (SelectionSorter) Sort(arr []int) SortResult {
 	startTime := time.Now()
 	var comparisons, swaps int
 
-	for i := 0; i < len(arr); i++ {
+	for i := 0; i < len(arr)-1; i++ {
 		minIndex := i
 
 		for j := i + 1; j < len(arr); j++ {
