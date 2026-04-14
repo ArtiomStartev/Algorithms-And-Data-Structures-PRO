@@ -16,7 +16,7 @@ func (ExponentialSearcher) Search(data any, x int) bool {
 	i := 1
 	for i < len(arr) && arr[i] <= x {
 		if i >= len(arr)/2 { // Check for possible overflow
-			i = len(arr)
+			i = len(arr) - 1
 			break
 		}
 		i *= 2
@@ -27,6 +27,10 @@ func (ExponentialSearcher) Search(data any, x int) bool {
 
 // recursiveBinarySearch performs a recursive binary search on a sorted array of integers
 func recursiveBinarySearch(arr []int, x, low, high int) bool {
+	if low > high {
+		return false
+	}
+
 	mid := low + (high-low)/2
 
 	if arr[mid] == x {
