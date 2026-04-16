@@ -4,10 +4,10 @@ package graphs
 func BFS[T any](startNode *GraphNode[T]) []T {
 	var traversalOrder []T
 	var queue []*GraphNode[T]
-	visited := make(map[*GraphNode[T]]bool)
+	visited := make(map[*GraphNode[T]]struct{})
 
 	queue = append(queue, startNode)
-	visited[startNode] = true
+	visited[startNode] = struct{}{}
 
 	for len(queue) > 0 {
 		currNode := queue[0]
@@ -16,9 +16,9 @@ func BFS[T any](startNode *GraphNode[T]) []T {
 		traversalOrder = append(traversalOrder, currNode.Value)
 
 		for _, neighbor := range currNode.Neighbors {
-			if !visited[neighbor] {
+			if _, ok := visited[neighbor]; !ok {
 				queue = append(queue, neighbor)
-				visited[neighbor] = true
+				visited[neighbor] = struct{}{}
 			}
 		}
 	}

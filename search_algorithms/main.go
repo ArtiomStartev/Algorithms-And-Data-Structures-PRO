@@ -34,7 +34,7 @@ func main() {
 		for _, size := range arrSizes {
 			for _, order := range orders {
 				// Skip binary search and exponential search for descending and random orders
-				if reflect.TypeOf(alg) == reflect.TypeOf(search.BinarySearcher{}) || reflect.TypeOf(alg) == reflect.TypeOf(search.ExponentialSearcher{}) {
+				if reflect.TypeOf(alg) == reflect.TypeFor[search.BinarySearcher]() || reflect.TypeOf(alg) == reflect.TypeFor[search.ExponentialSearcher]() {
 					if order == utils.Descending || order == utils.Random {
 						continue
 					}
