@@ -7,8 +7,8 @@ import (
 
 func TestStacks(t *testing.T) {
 	t.Run("Test stack with dynamic array", func(t *testing.T) {
-		stack := stack_queue.ArrayStack[int]{}
-		runStackTests(t, &stack)
+		stack := stack_queue.NewArrayStack[int]()
+		runStackTests(t, stack)
 	})
 
 	t.Run("Test stack with linked list", func(t *testing.T) {
