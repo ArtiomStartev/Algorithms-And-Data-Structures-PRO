@@ -21,7 +21,7 @@ func main() {
 
 	// Open or create a file to store the results
 	fileName := "./sort_algorithms/results/performance_results_" + time.Now().Format("2006-01-02_15:04:05") + ".txt"
-	file, err := os.OpenFile(fileName, os.O_CREATE|os.O_WRONLY, 0644)
+	file, err := os.OpenFile(fileName, os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0644)
 	if err != nil {
 		fmt.Println("Error creating file: ", err)
 		return

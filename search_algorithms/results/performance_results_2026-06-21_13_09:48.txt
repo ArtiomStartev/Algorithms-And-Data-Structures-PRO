@@ -1,0 +1,240 @@
+Algorithm: Linear Search | Array Size: 100000 | Order: Ascending | Avg Time: 0.063061 ms
+Array Size: 100000 | Order: Ascending | Iteration: 1 | Time: 0.058834 ms
+Array Size: 100000 | Order: Ascending | Iteration: 2 | Time: 0.073381 ms
+Array Size: 100000 | Order: Ascending | Iteration: 3 | Time: 0.047054 ms
+Array Size: 100000 | Order: Ascending | Iteration: 4 | Time: 0.074854 ms
+Array Size: 100000 | Order: Ascending | Iteration: 5 | Time: 0.061184 ms
+Algorithm: Linear Search | Array Size: 100000 | Order: Descending | Avg Time: 0.017000 ms
+Array Size: 100000 | Order: Descending | Iteration: 1 | Time: 0.005538 ms
+Array Size: 100000 | Order: Descending | Iteration: 2 | Time: 0.006071 ms
+Array Size: 100000 | Order: Descending | Iteration: 3 | Time: 0.043525 ms
+Array Size: 100000 | Order: Descending | Iteration: 4 | Time: 0.019552 ms
+Array Size: 100000 | Order: Descending | Iteration: 5 | Time: 0.010315 ms
+Algorithm: Linear Search | Array Size: 100000 | Order: Random | Avg Time: 0.015381 ms
+Array Size: 100000 | Order: Random | Iteration: 1 | Time: 0.022793 ms
+Array Size: 100000 | Order: Random | Iteration: 2 | Time: 0.011251 ms
+Array Size: 100000 | Order: Random | Iteration: 3 | Time: 0.012064 ms
+Array Size: 100000 | Order: Random | Iteration: 4 | Time: 0.026032 ms
+Array Size: 100000 | Order: Random | Iteration: 5 | Time: 0.004766 ms
+Algorithm: Linear Search | Array Size: 1000000 | Order: Ascending | Avg Time: 0.339416 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 0.037553 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 0.516088 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 0.357229 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 0.378772 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 0.407438 ms
+Algorithm: Linear Search | Array Size: 1000000 | Order: Descending | Avg Time: 0.240829 ms
+Array Size: 1000000 | Order: Descending | Iteration: 1 | Time: 0.269039 ms
+Array Size: 1000000 | Order: Descending | Iteration: 2 | Time: 0.222332 ms
+Array Size: 1000000 | Order: Descending | Iteration: 3 | Time: 0.408532 ms
+Array Size: 1000000 | Order: Descending | Iteration: 4 | Time: 0.019439 ms
+Array Size: 1000000 | Order: Descending | Iteration: 5 | Time: 0.284805 ms
+Algorithm: Linear Search | Array Size: 1000000 | Order: Random | Avg Time: 0.018981 ms
+Array Size: 1000000 | Order: Random | Iteration: 1 | Time: 0.000754 ms
+Array Size: 1000000 | Order: Random | Iteration: 2 | Time: 0.018528 ms
+Array Size: 1000000 | Order: Random | Iteration: 3 | Time: 0.043419 ms
+Array Size: 1000000 | Order: Random | Iteration: 4 | Time: 0.007936 ms
+Array Size: 1000000 | Order: Random | Iteration: 5 | Time: 0.024269 ms
+Algorithm: Linear Search | Array Size: 10000000 | Order: Ascending | Avg Time: 3.507324 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 1 | Time: 3.226140 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 2 | Time: 1.551112 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 3 | Time: 4.608731 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 4 | Time: 0.634354 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 5 | Time: 7.516287 ms
+Algorithm: Linear Search | Array Size: 10000000 | Order: Descending | Avg Time: 4.926985 ms
+Array Size: 10000000 | Order: Descending | Iteration: 1 | Time: 5.706760 ms
+Array Size: 10000000 | Order: Descending | Iteration: 2 | Time: 2.083712 ms
+Array Size: 10000000 | Order: Descending | Iteration: 3 | Time: 6.957473 ms
+Array Size: 10000000 | Order: Descending | Iteration: 4 | Time: 7.444418 ms
+Array Size: 10000000 | Order: Descending | Iteration: 5 | Time: 2.442565 ms
+Algorithm: Linear Search | Array Size: 10000000 | Order: Random | Avg Time: 0.016887 ms
+Array Size: 10000000 | Order: Random | Iteration: 1 | Time: 0.012868 ms
+Array Size: 10000000 | Order: Random | Iteration: 2 | Time: 0.010297 ms
+Array Size: 10000000 | Order: Random | Iteration: 3 | Time: 0.034301 ms
+Array Size: 10000000 | Order: Random | Iteration: 4 | Time: 0.015134 ms
+Array Size: 10000000 | Order: Random | Iteration: 5 | Time: 0.011837 ms
+Algorithm: Linear Search | Array Size: 100000000 | Order: Ascending | Avg Time: 36.279279 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 1 | Time: 46.245100 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 2 | Time: 64.592001 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 3 | Time: 41.211984 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 4 | Time: 26.908282 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 5 | Time: 2.439029 ms
+Algorithm: Linear Search | Array Size: 100000000 | Order: Descending | Avg Time: 23.763874 ms
+Array Size: 100000000 | Order: Descending | Iteration: 1 | Time: 42.392156 ms
+Array Size: 100000000 | Order: Descending | Iteration: 2 | Time: 6.710803 ms
+Array Size: 100000000 | Order: Descending | Iteration: 3 | Time: 25.162206 ms
+Array Size: 100000000 | Order: Descending | Iteration: 4 | Time: 16.821983 ms
+Array Size: 100000000 | Order: Descending | Iteration: 5 | Time: 27.732222 ms
+Algorithm: Linear Search | Array Size: 100000000 | Order: Random | Avg Time: 0.032018 ms
+Array Size: 100000000 | Order: Random | Iteration: 1 | Time: 0.017121 ms
+Array Size: 100000000 | Order: Random | Iteration: 2 | Time: 0.062395 ms
+Array Size: 100000000 | Order: Random | Iteration: 3 | Time: 0.021276 ms
+Array Size: 100000000 | Order: Random | Iteration: 4 | Time: 0.034992 ms
+Array Size: 100000000 | Order: Random | Iteration: 5 | Time: 0.024309 ms
+Algorithm: Linear Search | Array Size: 1000000000 | Order: Ascending | Avg Time: 1826.199220 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 1 | Time: 3951.759879 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 2 | Time: 1303.326261 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 3 | Time: 2064.887159 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 4 | Time: 595.311346 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 5 | Time: 1215.711459 ms
+Algorithm: Linear Search | Array Size: 1000000000 | Order: Descending | Avg Time: 440.570491 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 1 | Time: 100.057298 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 2 | Time: 831.347135 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 3 | Time: 590.941414 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 4 | Time: 522.555996 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 5 | Time: 157.950615 ms
+Algorithm: Linear Search | Array Size: 1000000000 | Order: Random | Avg Time: 0.344153 ms
+Array Size: 1000000000 | Order: Random | Iteration: 1 | Time: 0.219846 ms
+Array Size: 1000000000 | Order: Random | Iteration: 2 | Time: 0.454909 ms
+Array Size: 1000000000 | Order: Random | Iteration: 3 | Time: 0.255946 ms
+Array Size: 1000000000 | Order: Random | Iteration: 4 | Time: 0.023655 ms
+Array Size: 1000000000 | Order: Random | Iteration: 5 | Time: 0.766409 ms
+Algorithm: Binary Search | Array Size: 100000 | Order: Ascending | Avg Time: 0.000440 ms
+Array Size: 100000 | Order: Ascending | Iteration: 1 | Time: 0.000432 ms
+Array Size: 100000 | Order: Ascending | Iteration: 2 | Time: 0.000355 ms
+Array Size: 100000 | Order: Ascending | Iteration: 3 | Time: 0.000514 ms
+Array Size: 100000 | Order: Ascending | Iteration: 4 | Time: 0.000442 ms
+Array Size: 100000 | Order: Ascending | Iteration: 5 | Time: 0.000461 ms
+Algorithm: Binary Search | Array Size: 1000000 | Order: Ascending | Avg Time: 0.000881 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 0.000554 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 0.000698 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 0.000622 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 0.000736 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 0.001798 ms
+Algorithm: Binary Search | Array Size: 10000000 | Order: Ascending | Avg Time: 0.001431 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 1 | Time: 0.001560 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 2 | Time: 0.001750 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 3 | Time: 0.001267 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 4 | Time: 0.000995 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 5 | Time: 0.001586 ms
+Algorithm: Binary Search | Array Size: 100000000 | Order: Ascending | Avg Time: 0.002278 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 1 | Time: 0.002375 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 2 | Time: 0.002229 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 3 | Time: 0.002805 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 4 | Time: 0.001927 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 5 | Time: 0.002056 ms
+Algorithm: Binary Search | Array Size: 1000000000 | Order: Ascending | Avg Time: 0.003848 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 1 | Time: 0.002988 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 2 | Time: 0.002712 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 3 | Time: 0.002693 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 4 | Time: 0.002755 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 5 | Time: 0.008095 ms
+Algorithm: Exponential Search | Array Size: 100000 | Order: Ascending | Avg Time: 0.000936 ms
+Array Size: 100000 | Order: Ascending | Iteration: 1 | Time: 0.000900 ms
+Array Size: 100000 | Order: Ascending | Iteration: 2 | Time: 0.000837 ms
+Array Size: 100000 | Order: Ascending | Iteration: 3 | Time: 0.001098 ms
+Array Size: 100000 | Order: Ascending | Iteration: 4 | Time: 0.001104 ms
+Array Size: 100000 | Order: Ascending | Iteration: 5 | Time: 0.000743 ms
+Algorithm: Exponential Search | Array Size: 1000000 | Order: Ascending | Avg Time: 0.001581 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 0.001818 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 0.001597 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 0.001110 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 0.001780 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 0.001603 ms
+Algorithm: Exponential Search | Array Size: 10000000 | Order: Ascending | Avg Time: 0.002200 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 1 | Time: 0.002278 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 2 | Time: 0.002317 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 3 | Time: 0.002506 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 4 | Time: 0.002236 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 5 | Time: 0.001665 ms
+Algorithm: Exponential Search | Array Size: 100000000 | Order: Ascending | Avg Time: 0.002574 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 1 | Time: 0.003056 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 2 | Time: 0.002372 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 3 | Time: 0.002196 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 4 | Time: 0.002874 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 5 | Time: 0.002374 ms
+Algorithm: Exponential Search | Array Size: 1000000000 | Order: Ascending | Avg Time: 0.024902 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 1 | Time: 0.004296 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 2 | Time: 0.101337 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 3 | Time: 0.002988 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 4 | Time: 0.003924 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 5 | Time: 0.011968 ms
+Algorithm: Binary Search Tree | Array Size: 100000 | Order: Ascending | Avg Time: 0.041169 ms
+Array Size: 100000 | Order: Ascending | Iteration: 1 | Time: 0.018110 ms
+Array Size: 100000 | Order: Ascending | Iteration: 2 | Time: 0.072341 ms
+Array Size: 100000 | Order: Ascending | Iteration: 3 | Time: 0.017775 ms
+Array Size: 100000 | Order: Ascending | Iteration: 4 | Time: 0.026040 ms
+Array Size: 100000 | Order: Ascending | Iteration: 5 | Time: 0.071580 ms
+Algorithm: Binary Search Tree | Array Size: 100000 | Order: Descending | Avg Time: 0.024617 ms
+Array Size: 100000 | Order: Descending | Iteration: 1 | Time: 0.023876 ms
+Array Size: 100000 | Order: Descending | Iteration: 2 | Time: 0.025153 ms
+Array Size: 100000 | Order: Descending | Iteration: 3 | Time: 0.018308 ms
+Array Size: 100000 | Order: Descending | Iteration: 4 | Time: 0.017608 ms
+Array Size: 100000 | Order: Descending | Iteration: 5 | Time: 0.038142 ms
+Algorithm: Binary Search Tree | Array Size: 100000 | Order: Random | Avg Time: 0.000615 ms
+Array Size: 100000 | Order: Random | Iteration: 1 | Time: 0.000460 ms
+Array Size: 100000 | Order: Random | Iteration: 2 | Time: 0.000845 ms
+Array Size: 100000 | Order: Random | Iteration: 3 | Time: 0.000634 ms
+Array Size: 100000 | Order: Random | Iteration: 4 | Time: 0.000480 ms
+Array Size: 100000 | Order: Random | Iteration: 5 | Time: 0.000657 ms
+Algorithm: Binary Search Tree | Array Size: 1000000 | Order: Ascending | Avg Time: 0.051155 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 1 | Time: 0.028904 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 2 | Time: 0.007139 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 3 | Time: 0.048571 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 4 | Time: 0.090664 ms
+Array Size: 1000000 | Order: Ascending | Iteration: 5 | Time: 0.080497 ms
+Algorithm: Binary Search Tree | Array Size: 1000000 | Order: Descending | Avg Time: 0.043977 ms
+Array Size: 1000000 | Order: Descending | Iteration: 1 | Time: 0.021807 ms
+Array Size: 1000000 | Order: Descending | Iteration: 2 | Time: 0.076281 ms
+Array Size: 1000000 | Order: Descending | Iteration: 3 | Time: 0.028939 ms
+Array Size: 1000000 | Order: Descending | Iteration: 4 | Time: 0.072961 ms
+Array Size: 1000000 | Order: Descending | Iteration: 5 | Time: 0.019898 ms
+Algorithm: Binary Search Tree | Array Size: 1000000 | Order: Random | Avg Time: 0.000780 ms
+Array Size: 1000000 | Order: Random | Iteration: 1 | Time: 0.000825 ms
+Array Size: 1000000 | Order: Random | Iteration: 2 | Time: 0.000710 ms
+Array Size: 1000000 | Order: Random | Iteration: 3 | Time: 0.000805 ms
+Array Size: 1000000 | Order: Random | Iteration: 4 | Time: 0.000835 ms
+Array Size: 1000000 | Order: Random | Iteration: 5 | Time: 0.000728 ms
+Algorithm: Binary Search Tree | Array Size: 10000000 | Order: Ascending | Avg Time: 0.064207 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 1 | Time: 0.086295 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 2 | Time: 0.023586 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 3 | Time: 0.060891 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 4 | Time: 0.039560 ms
+Array Size: 10000000 | Order: Ascending | Iteration: 5 | Time: 0.110703 ms
+Algorithm: Binary Search Tree | Array Size: 10000000 | Order: Descending | Avg Time: 0.074990 ms
+Array Size: 10000000 | Order: Descending | Iteration: 1 | Time: 0.023342 ms
+Array Size: 10000000 | Order: Descending | Iteration: 2 | Time: 0.143750 ms
+Array Size: 10000000 | Order: Descending | Iteration: 3 | Time: 0.100995 ms
+Array Size: 10000000 | Order: Descending | Iteration: 4 | Time: 0.030572 ms
+Array Size: 10000000 | Order: Descending | Iteration: 5 | Time: 0.076294 ms
+Algorithm: Binary Search Tree | Array Size: 10000000 | Order: Random | Avg Time: 0.000970 ms
+Array Size: 10000000 | Order: Random | Iteration: 1 | Time: 0.000741 ms
+Array Size: 10000000 | Order: Random | Iteration: 2 | Time: 0.000937 ms
+Array Size: 10000000 | Order: Random | Iteration: 3 | Time: 0.000740 ms
+Array Size: 10000000 | Order: Random | Iteration: 4 | Time: 0.001350 ms
+Array Size: 10000000 | Order: Random | Iteration: 5 | Time: 0.001084 ms
+Algorithm: Binary Search Tree | Array Size: 100000000 | Order: Ascending | Avg Time: 0.051561 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 1 | Time: 0.095557 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 2 | Time: 0.008125 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 3 | Time: 0.056587 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 4 | Time: 0.072924 ms
+Array Size: 100000000 | Order: Ascending | Iteration: 5 | Time: 0.024612 ms
+Algorithm: Binary Search Tree | Array Size: 100000000 | Order: Descending | Avg Time: 0.060068 ms
+Array Size: 100000000 | Order: Descending | Iteration: 1 | Time: 0.033127 ms
+Array Size: 100000000 | Order: Descending | Iteration: 2 | Time: 0.025000 ms
+Array Size: 100000000 | Order: Descending | Iteration: 3 | Time: 0.089776 ms
+Array Size: 100000000 | Order: Descending | Iteration: 4 | Time: 0.088212 ms
+Array Size: 100000000 | Order: Descending | Iteration: 5 | Time: 0.064227 ms
+Algorithm: Binary Search Tree | Array Size: 100000000 | Order: Random | Avg Time: 0.000877 ms
+Array Size: 100000000 | Order: Random | Iteration: 1 | Time: 0.000891 ms
+Array Size: 100000000 | Order: Random | Iteration: 2 | Time: 0.000709 ms
+Array Size: 100000000 | Order: Random | Iteration: 3 | Time: 0.000925 ms
+Array Size: 100000000 | Order: Random | Iteration: 4 | Time: 0.000924 ms
+Array Size: 100000000 | Order: Random | Iteration: 5 | Time: 0.000938 ms
+Algorithm: Binary Search Tree | Array Size: 1000000000 | Order: Ascending | Avg Time: 0.077074 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 1 | Time: 0.116505 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 2 | Time: 0.075384 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 3 | Time: 0.069343 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 4 | Time: 0.063450 ms
+Array Size: 1000000000 | Order: Ascending | Iteration: 5 | Time: 0.060688 ms
+Algorithm: Binary Search Tree | Array Size: 1000000000 | Order: Descending | Avg Time: 0.070153 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 1 | Time: 0.103548 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 2 | Time: 0.097833 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 3 | Time: 0.066850 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 4 | Time: 0.059867 ms
+Array Size: 1000000000 | Order: Descending | Iteration: 5 | Time: 0.022669 ms
+Algorithm: Binary Search Tree | Array Size: 1000000000 | Order: Random | Avg Time: 0.001213 ms
+Array Size: 1000000000 | Order: Random | Iteration: 1 | Time: 0.000941 ms
+Array Size: 1000000000 | Order: Random | Iteration: 2 | Time: 0.001512 ms
+Array Size: 1000000000 | Order: Random | Iteration: 3 | Time: 0.001688 ms
+Array Size: 1000000000 | Order: Random | Iteration: 4 | Time: 0.000770 ms
+Array Size: 1000000000 | Order: Random | Iteration: 5 | Time: 0.001158 ms
